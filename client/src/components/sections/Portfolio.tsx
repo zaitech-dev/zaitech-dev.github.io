@@ -9,51 +9,36 @@ const Portfolio: React.FC = () => {
 
   const projects = [
     {
-      title: 'Machine Assembler',
-      titleAr: 'مجمع الآلة',
-      description: 'Hypothetical machine assembler for low-level programming and system optimization.',
-      descriptionAr: 'مجمع آلة افتراضي للبرمجة منخفضة المستوى وتحسين النظام.',
-      image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400',
+      title: 'Multi-Country E-commerce Platform',
+      titleAr: 'منصة التجارة الإلكترونية متعددة البلدان',
+      description: 'Led the expansion of a Dutch retailer\'s platform to Belgium, implementing multi-lingual support and different tax systems. Platform processes hundreds of thousands of orders monthly.',
+      descriptionAr: 'قاد توسيع منصة بائع تجزئة هولندي إلى بلجيكا، مع تنفيذ دعم متعدد اللغات وأنظمة ضرائب مختلفة. تعالج المنصة مئات الآلاف من الطلبات شهرياً.',
+      metrics: ['500K+ Orders', '€50M+ Revenue'],
+      metricsAr: ['أكثر من 500 ألف طلب', 'أكثر من 50 مليون يورو إيرادات'],
+      technologies: ['Golang', 'GCP', 'Microservices'],
+      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400',
       link: '#'
     },
     {
-      title: 'Generic Camera Calibrator',
-      titleAr: 'معاير الكاميرا العام',
-      description: 'Advanced camera calibration tool for computer vision applications.',
-      descriptionAr: 'أداة معايرة كاميرا متقدمة لتطبيقات الرؤية الحاسوبية.',
-      image: 'https://images.unsplash.com/photo-1581093588401-fbb62a02f120?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400',
+      title: 'Mobile POS Platform Scaling',
+      titleAr: 'توسيع منصة نقاط البيع المحمولة',
+      description: 'Scaled Android-based point-of-sale system from 10 to 230,000+ active devices, implementing CI/CD pipelines and monitoring systems for optimal performance.',
+      descriptionAr: 'وسع نظام نقاط البيع المبني على أندرويد من 10 إلى أكثر من 230,000 جهاز نشط، مع تنفيذ خطوط CI/CD وأنظمة المراقبة للأداء الأمثل.',
+      metrics: ['230K+ Devices', '2300% Growth'],
+      metricsAr: ['أكثر من 230 ألف جهاز', 'نمو 2300%'],
+      technologies: ['Kotlin', 'Android', 'CI/CD'],
+      image: 'https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400',
       link: '#'
     },
     {
-      title: 'ML Production Service',
-      titleAr: 'خدمة الإنتاج للتعلم الآلي',
-      description: 'Production-grade machine learning backend for real-time position detection.',
-      descriptionAr: 'خلفية تعلم آلي بمستوى الإنتاج للكشف عن المواقع في الوقت الفعلي.',
-      image: 'https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400',
-      link: '#'
-    },
-    {
-      title: 'Soraiva-bot',
-      titleAr: 'روبوت سورايفا',
-      description: 'Advanced robotics project for competitive robotics events.',
-      descriptionAr: 'مشروع روبوتات متقدم لأحداث الروبوتات التنافسية.',
-      image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400',
-      link: '#'
-    },
-    {
-      title: 'Bombeirinho',
-      titleAr: 'بومبيرينيو',
-      description: '3rd place winner at RoboGames - Fire-fighting category robot.',
-      descriptionAr: 'الفائز بالمركز الثالث في RoboGames - فئة روبوت مكافحة الحرائق.',
-      image: 'https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400',
-      link: '#'
-    },
-    {
-      title: 'Tobinho',
-      titleAr: 'توبينيو',
-      description: '2nd place winner at RoboGames - Tube Push category robot.',
-      descriptionAr: 'الفائز بالمركز الثاني في RoboGames - فئة روبوت دفع الأنابيب.',
-      image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400',
+      title: 'ML Position Detection System',
+      titleAr: 'نظام كشف المواقع بالتعلم الآلي',
+      description: 'Developed production-grade machine learning backend service that reduced position-detection system response time by 75%, replacing legacy .NET infrastructure.',
+      descriptionAr: 'طور خدمة خلفية للتعلم الآلي بمستوى الإنتاج قللت وقت استجابة نظام كشف المواقع بنسبة 75%، مع استبدال البنية التحتية القديمة لـ .NET.',
+      metrics: ['75% Faster', 'Production ML'],
+      metricsAr: ['أسرع بنسبة 75%', 'تعلم آلي إنتاجي'],
+      technologies: ['Python', 'ML', 'Flask'],
+      image: 'https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400',
       link: '#'
     }
   ];
@@ -66,7 +51,7 @@ const Portfolio: React.FC = () => {
           <div className="w-24 h-1 bg-zai-accent mx-auto mb-8"></div>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => {
             const { elementRef, isVisible } = useScrollAnimation();
             return (
@@ -83,6 +68,25 @@ const Portfolio: React.FC = () => {
                   <p className="text-gray-300 mb-4">
                     {t('language') === 'ar' ? project.descriptionAr : project.description}
                   </p>
+                  
+                  {project.metrics && (
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {project.metrics.map((metric, metricIndex) => (
+                        <span key={metricIndex} className="px-2 py-1 bg-zai-success text-white text-xs rounded-full font-semibold">
+                          {t('language') === 'ar' ? project.metricsAr[metricIndex] : metric}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                  
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.technologies.map((tech, techIndex) => (
+                      <span key={techIndex} className="px-2 py-1 bg-zai-primary text-gray-300 text-xs rounded-full">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  
                   <a 
                     href={project.link} 
                     className="text-zai-accent hover:text-blue-400 font-semibold flex items-center gap-2"

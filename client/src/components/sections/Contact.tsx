@@ -97,7 +97,7 @@ const Contact: React.FC = () => {
               </div>
               <div>
                 <Label htmlFor="email" className="block text-sm font-semibold mb-2">
-                  {t('email')} *
+                  {t('emailField')} *
                 </Label>
                 <Input
                   type="email"
