@@ -17,21 +17,21 @@ const About: React.FC = () => {
       color: 'text-green-400'
     },
     {
-      icon: Users,
-      title: t('teamLeadership'),
-      description: t('teamLeadershipDesc'),
+      icon: Target,
+      title: t('systemScaling'),
+      description: t('systemScalingDesc'),
       color: 'text-blue-400'
     },
     {
-      icon: Target,
-      title: t('platformScaling'),
-      description: t('platformScalingDesc'),
+      icon: Users,
+      title: t('globalReach'),
+      description: t('globalReachDesc'),
       color: 'text-purple-400'
     },
     {
       icon: User,
-      title: t('mentorshipImpact'),
-      description: t('mentorshipImpactDesc'),
+      title: t('teamExpertise'),
+      description: t('teamExpertiseDesc'),
       color: 'text-orange-400'
     }
   ];
@@ -41,29 +41,37 @@ const About: React.FC = () => {
       <div className="container mx-auto max-w-6xl">
         <div ref={titleRef} className={`text-center mb-16 fade-in ${titleVisible ? 'active' : ''}`}>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">{t('aboutTitle')}</h2>
-          <p className="text-xl md:text-2xl text-zai-accent font-semibold mb-4">{t('founderTitle')}</p>
-          <p className="text-lg text-gray-300 mb-8">{t('founderDescription')}</p>
+          <p className="text-xl md:text-2xl text-zai-accent font-semibold mb-4">{t('companyMission')}</p>
+          <p className="text-lg text-gray-300 mb-8">{t('missionDescription')}</p>
           <div className="w-24 h-1 bg-zai-accent mx-auto"></div>
         </div>
         
         <div ref={contentRef} className={`glass rounded-2xl p-8 md:p-12 mb-16 fade-in ${contentVisible ? 'active' : ''}`}>
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-zai-accent">{t('professionalJourney')}</h3>
+              <h3 className="text-2xl font-bold mb-4 text-zai-accent">{t('ourApproach')}</h3>
               <p className="text-lg leading-relaxed text-gray-300 mb-6">
                 {t('aboutDescription')}
               </p>
-              <p className="text-lg leading-relaxed text-gray-300">
-                {t('journeyDescription')}
+              <p className="text-lg leading-relaxed text-gray-300 mb-6">
+                {t('approachDescription')}
               </p>
+              <div className="border-l-4 border-zai-accent pl-4">
+                <p className="text-sm text-gray-400">{t('founderNote')}</p>
+                <a href="https://zaitera.com" target="_blank" rel="noopener noreferrer" className="text-zai-accent hover:text-blue-400 text-sm">
+                  {t('founderLink')} →
+                </a>
+              </div>
             </div>
             <div className="flex justify-center">
               <div className="w-80 h-80 rounded-2xl bg-gradient-to-br from-zai-accent/20 to-zai-success/20 flex items-center justify-center">
-                <img 
-                  src="https://zaitera.com/assets/az-talk_1749424545263-Dmsio6V8.jpg" 
-                  alt="Abdullah Zaiter" 
-                  className="w-72 h-72 rounded-xl object-cover shadow-2xl"
-                />
+                <div className="text-center">
+                  <div className="w-32 h-32 mx-auto mb-4 bg-zai-accent/20 rounded-full flex items-center justify-center">
+                    <div className="text-6xl font-bold text-zai-accent">Z</div>
+                  </div>
+                  <h4 className="text-xl font-bold text-white">Zaitech Development</h4>
+                  <p className="text-gray-400">Enterprise Solutions</p>
+                </div>
               </div>
             </div>
           </div>

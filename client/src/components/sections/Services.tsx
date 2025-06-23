@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, Users, Settings } from 'lucide-react';
+import { TrendingUp, Users, Settings } from 'lucide-react';
 import { useLanguage } from '@/components/LanguageProvider';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
@@ -9,27 +9,27 @@ const Services: React.FC = () => {
 
   const services = [
     {
-      icon: Users,
-      title: t('mentorshipTitle'),
-      description: t('mentorshipDesc'),
-      features: ['50+ Engineers Helped', 'Career Planning', 'Technical Skills', 'Industry Insights'],
-      featuresAr: ['ساعد أكثر من 50 مهندساً', 'تخطيط المهنة', 'المهارات التقنية', 'رؤى الصناعة'],
+      icon: Settings,
+      title: t('platformDevelopmentTitle'),
+      description: t('platformDevelopmentDesc'),
+      features: ['E-commerce Platforms', 'Payment Systems', 'Mobile Applications', 'API Development'],
+      featuresAr: ['منصات التجارة الإلكترونية', 'أنظمة الدفع', 'تطبيقات الجوال', 'تطوير الواجهات البرمجية'],
       color: 'from-blue-500 to-purple-600'
     },
     {
-      icon: BookOpen,
-      title: t('trainingTitle'),
-      description: t('trainingDesc'),
-      features: ['200+ Hours Delivered', 'Kotlin', 'Golang', 'GCP', 'Leadership'],
-      featuresAr: ['أكثر من 200 ساعة تدريب', 'كوتلن', 'غولانغ', 'GCP', 'القيادة'],
+      icon: TrendingUp,
+      title: t('systemScalingTitle'),
+      description: t('systemScalingDesc'),
+      features: ['Infrastructure Scaling', 'Performance Optimization', 'Multi-Country Deployment', 'DevOps Solutions'],
+      featuresAr: ['توسيع البنية التحتية', 'تحسين الأداء', 'النشر متعدد البلدان', 'حلول DevOps'],
       color: 'from-green-500 to-teal-600'
     },
     {
-      icon: Settings,
+      icon: Users,
       title: t('consultancyTitle'),
       description: t('consultancyDesc'),
-      features: ['Enterprise Solutions', 'System Architecture', 'Cloud Platforms', 'Strategy'],
-      featuresAr: ['حلول المؤسسات', 'هندسة النظم', 'المنصات السحابية', 'الاستراتيجية'],
+      features: ['Technology Strategy', 'Architecture Design', 'Digital Transformation', 'Team Leadership'],
+      featuresAr: ['استراتيجية التكنولوجيا', 'تصميم الهندسة المعمارية', 'التحول الرقمي', 'قيادة الفريق'],
       color: 'from-orange-500 to-red-600'
     }
   ];
