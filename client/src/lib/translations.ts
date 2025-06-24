@@ -50,19 +50,21 @@ export const translations = {
     consultancyDesc: 'Strategic technical guidance for architecture decisions, technology stack selection, and digital transformation initiatives.',
     
     // Work Section
-    workTitle: 'Professional Experience',
-    ongoing: 'Present',
-    completed: 'Completed',
+    workTitle: 'Our Projects',
+    ongoing: 'Active',
+    completed: 'Delivered',
     
     // Skills Section
-    skillsTitle: 'Technical Expertise',
-    skillsDescription: 'A comprehensive technology stack spanning multiple domains and platforms.',
-    leadership: 'Leadership & Development',
-    techLeadership: '• Tech Leadership',
+    skillsTitle: 'Technology Stack',
+    skillsDescription: 'Enterprise-grade technologies we leverage to deliver scalable solutions.',
+    coreCapabilities: 'Core Capabilities',
+    techLeadership: '• Technical Leadership',
     backendDev: '• Backend Development',
     paymentProcessing: '• Payment Processing',
     ecommerceSolutions: '• E-Commerce Solutions',
     mobileCloud: '• Mobile & Cloud Integration',
+    cloudInfrastructure: 'Cloud & Infrastructure',
+    databases: 'Databases & Analytics',
     programmingLanguages: 'Programming Languages',
     frameworksLibraries: 'Frameworks & Libraries',
     
@@ -132,19 +134,21 @@ export const translations = {
     contactEmail: 'contact@zaitech.dev',
     
     // Work Section
-    workTitle: 'الخبرة العملية',
-    ongoing: 'مستمر',
-    completed: 'مكتمل',
+    workTitle: 'مشاريعنا',
+    ongoing: 'نشط',
+    completed: 'مُسلّم',
     
     // Skills Section
-    skillsTitle: 'المهارات والتقنيات',
-    skillsDescription: 'نستفيد من مجموعة واسعة من التقنيات المتطورة لتقديم حلول مبتكرة.',
-    leadership: 'القيادة والتطوير',
+    skillsTitle: 'التقنيات المستخدمة',
+    skillsDescription: 'تقنيات على مستوى المؤسسات نستخدمها لتقديم حلول قابلة للتوسع.',
+    coreCapabilities: 'القدرات الأساسية',
     techLeadership: '• القيادة التقنية',
     backendDev: '• تطوير الخادم',
     paymentProcessing: '• معالجة المدفوعات',
     ecommerceSolutions: '• حلول التجارة الإلكترونية',
     mobileCloud: '• تكامل الجوال والسحابة',
+    cloudInfrastructure: 'السحابة والبنية التحتية',
+    databases: 'قواعد البيانات والتحليلات',
     programmingLanguages: 'لغات البرمجة',
     frameworksLibraries: 'الأطر والمكتبات',
     
@@ -161,7 +165,6 @@ export const translations = {
     platformDevelopmentTitle: 'تطوير المنصات',
     platformDevelopmentDesc: 'تطوير شامل لمنصات التجارة الإلكترونية القابلة للتوسع وأنظمة الدفع وتطبيقات المؤسسات التي تتعامل مع ملايين المعاملات.',
     systemScalingTitle: 'توسيع الأنظمة والتحسين', 
-    systemScalingDesc: 'توسيع البنية التحتية وتحسين الأداء وتوسيع المنصات متعددة البلدان مع نتائج مثبتة.',
     consultancyTitle: 'الاستشارات التقنية',
     consultancyDesc: 'إرشادات تقنية استراتيجية لقرارات الهندسة المعمارية واختيار المكدس التقني ومبادرات التحول الرقمي.',
     

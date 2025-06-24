@@ -6,48 +6,76 @@ const Work: React.FC = () => {
   const { t } = useLanguage();
   const { elementRef: titleRef, isVisible: titleVisible } = useScrollAnimation();
 
-  const workExperiences = [
+  const projects = [
     {
-      company: 'Xebia',
-      companyAr: 'Xebia',
-      position: 'Senior Consultant',
-      positionAr: 'مستشار أول',
-      location: 'Utrecht, Netherlands',
-      locationAr: 'أوتريخت، هولندا',
-      period: '2022/11 – Present',
-      periodAr: '2022/11 – الحاضر',
+      client: 'ShowSeeker',
+      clientAr: 'ShowSeeker',
+      project: 'Advanced Programmatic Campaign Management',
+      projectAr: 'إدارة الحملات البرمجية المتقدمة',
+      location: 'United States',
+      locationAr: 'الولايات المتحدة',
+      period: '2024 – Present',
+      periodAr: '2024 – الحاضر',
       status: 'ongoing',
-      description: 'Leading a team of four software developers, responsible for the design, development, and maintenance of the ecommerce platform of a big Dutch retailer. Since starting as Senior Consultant, the platform has processed hundreds of thousands of orders, generating tens of millions in revenue. Expanded the platform beyond the Netherlands to include Belgium, transforming it into a multi-lingual, multi-country system.',
-      descriptionAr: 'قيادة فريق من أربعة مطوري برمجيات، مسؤول عن تصميم وتطوير وصيانة منصة التجارة الإلكترونية لبائع تجزئة هولندي كبير. منذ البدء كمستشار أول، عالجت المنصة مئات الآلاف من الطلبات، محققة عشرات الملايين من الإيرادات. وسعت المنصة خارج هولندا لتشمل بلجيكا، محولة إياها إلى نظام متعدد اللغات ومتعدد البلدان.',
-      technologies: ['E-Commerce', 'Golang', 'GCP', 'Leadership', 'International Expansion']
+      description: 'Building and extending advanced programmatic campaign management capabilities for a leading advertising technology platform. Developing sophisticated automation tools, real-time bidding optimization, and cross-platform campaign orchestration systems that handle billions in advertising spend.',
+      descriptionAr: 'بناء وتوسيع قدرات إدارة الحملات البرمجية المتقدمة لمنصة تكنولوجيا إعلانية رائدة. تطوير أدوات أتمتة متطورة وتحسين المزايدة في الوقت الفعلي وأنظمة تنسيق الحملات عبر المنصات التي تتعامل مع مليارات من الإنفاق الإعلاني.',
+      technologies: ['Campaign Management', 'Real-time Bidding', 'Data Analytics', 'API Integration', 'Automation']
     },
     {
-      company: 'ASML',
-      companyAr: 'ASML',
-      position: 'Lead Software Engineer',
-      positionAr: 'مهندس برمجيات رئيسي',
-      location: 'Eindhoven, Netherlands',
-      locationAr: 'أيندهوفن، هولندا',
-      period: '2021/10 – 2022/11',
-      periodAr: '2021/10 – 2022/11',
+      client: 'Electronics Retail Chain',
+      clientAr: 'سلسلة بيع إلكترونيات بالتجزئة',
+      project: 'Automated Pricing Intelligence System',
+      projectAr: 'نظام ذكاء التسعير الآلي',
+      location: 'United States',
+      locationAr: 'الولايات المتحدة',
+      period: '2023 – 2024',
+      periodAr: '2023 – 2024',
       status: 'completed',
-      description: 'Reduced eight hours of the time it takes the machine to be ready for production by adapting machine calibration & performance procedures to receive data from a ready file instead of running manual calibration from zero. Collaborated with multiple stakeholders to achieve significant alignments and agreements.',
-      descriptionAr: 'قللت ثماني ساعات من الوقت اللازم لتجهيز الآلة للإنتاج من خلال تكييف إجراءات المعايرة والأداء لتلقي البيانات من ملف جاهز بدلاً من تشغيل المعايرة اليدوية من الصفر. تعاونت مع أصحاب المصلحة المتعددين لتحقيق توافقات واتفاقيات مهمة.',
-      technologies: ['Python', 'C++', 'Unit Testing', 'Documentation']
+      description: 'Developed an automated pricing system for smartphones and electronics that fetches real-time prices from major wholesale companies. The system analyzes market data, competitor pricing, and demand patterns to determine optimal pricing strategies, resulting in improved profit margins and competitive positioning.',
+      descriptionAr: 'طورنا نظام تسعير آلي للهواتف الذكية والإلكترونيات يجلب الأسعار في الوقت الفعلي من شركات الجملة الكبرى. يحلل النظام بيانات السوق وأسعار المنافسين وأنماط الطلب لتحديد استراتيجيات التسعير المثلى، مما يؤدي إلى تحسين هوامش الربح والموقع التنافسي.',
+      technologies: ['Price Intelligence', 'Market Analysis', 'API Integration', 'Data Processing', 'Real-time Systems']
     },
     {
-      company: 'Stone',
-      companyAr: 'Stone',
-      position: 'Lead Software Engineer',
-      positionAr: 'مهندس برمجيات رئيسي',
-      location: 'Rio de Janeiro, Brazil',
-      locationAr: 'ريو دي جانيرو، البرازيل',
-      period: '2019/11 – 2021/10',
-      periodAr: '2019/11 – 2021/10',
+      client: 'Dutch E-Commerce Retailer',
+      clientAr: 'بائع تجزئة إلكتروني هولندي',
+      project: 'Multi-Country E-Commerce Platform',
+      projectAr: 'منصة تجارة إلكترونية متعددة البلدان',
+      location: 'Netherlands & Belgium',
+      locationAr: 'هولندا وبلجيكا',
+      period: '2022 – Present',
+      periodAr: '2022 – الحاضر',
+      status: 'ongoing',
+      description: 'Leading the development and expansion of a major e-commerce platform that processes hundreds of thousands of orders, generating tens of millions in revenue. Successfully expanded operations from Netherlands to Belgium, implementing multi-lingual and multi-currency capabilities.',
+      descriptionAr: 'قيادة تطوير وتوسيع منصة تجارة إلكترونية كبرى تعالج مئات الآلاف من الطلبات وتحقق عشرات الملايين من الإيرادات. نجحنا في توسيع العمليات من هولندا إلى بلجيكا، مع تنفيذ قدرات متعددة اللغات والعملات.',
+      technologies: ['E-Commerce', 'Golang', 'GCP', 'International Expansion', 'Microservices']
+    },
+    {
+      client: 'Semiconductor Industry',
+      clientAr: 'صناعة أشباه الموصلات',
+      project: 'Manufacturing Optimization System',
+      projectAr: 'نظام تحسين التصنيع',
+      location: 'Netherlands',
+      locationAr: 'هولندا',
+      period: '2021 – 2022',
+      periodAr: '2021 – 2022',
       status: 'completed',
-      description: 'Scaled a product from less than ten devices to +230k devices actively used by clients. Implemented CI pipelines, integrated new manufacturers, and developed monitoring services. Led the team responsible for introducing Android-based POS to the market and scaling it effectively.',
-      descriptionAr: 'وسعت منتجاً من أقل من عشرة أجهزة إلى أكثر من 230 ألف جهاز مستخدم بنشاط من قبل العملاء. نفذت خطوط CI، ودمجت مصنعين جدد، وطورت خدمات المراقبة. قدت الفريق المسؤول عن إدخال نقاط البيع المبنية على أندرويد إلى السوق وتوسيعها بفعالية.',
-      technologies: ['Kotlin', 'Android', 'Architecture', 'Coroutines', 'Agile']
+      description: 'Optimized critical manufacturing processes, reducing machine preparation time by 8 hours through advanced calibration automation. Implemented data-driven approaches that significantly improved production efficiency and reduced operational costs.',
+      descriptionAr: 'حسّنا عمليات التصنيع الحرجة، مما قلل وقت تحضير الآلات بـ 8 ساعات من خلال أتمتة المعايرة المتقدمة. نفذنا نهجاً مدفوعاً بالبيانات حسّن بشكل كبير كفاءة الإنتاج وقلل التكاليف التشغيلية.',
+      technologies: ['Python', 'C++', 'Process Optimization', 'Manufacturing Systems', 'Data Analysis']
+    },
+    {
+      client: 'FinTech Payment Provider',
+      clientAr: 'مزود مدفوعات تقنية مالية',
+      project: 'Payment Infrastructure Scaling',
+      projectAr: 'توسيع البنية التحتية للمدفوعات',
+      location: 'Brazil',
+      locationAr: 'البرازيل',
+      period: '2019 – 2021',
+      periodAr: '2019 – 2021',
+      status: 'completed',
+      description: 'Scaled payment infrastructure from supporting fewer than 10 devices to over 230,000 active devices. Architected and implemented robust Android-based point-of-sale systems, CI/CD pipelines, and comprehensive monitoring solutions.',
+      descriptionAr: 'وسّعنا البنية التحتية للمدفوعات من دعم أقل من 10 أجهزة إلى أكثر من 230,000 جهاز نشط. صممنا ونفذنا أنظمة نقاط بيع قوية مبنية على أندرويد وخطوط CI/CD وحلول مراقبة شاملة.',
+      technologies: ['Kotlin', 'Android', 'Payment Systems', 'Infrastructure Scaling', 'DevOps']
     }
   ];
 
@@ -63,7 +91,7 @@ const Work: React.FC = () => {
           <div className="timeline-line"></div>
           
           <div className="space-y-12">
-            {workExperiences.map((exp, index) => {
+            {projects.map((project, index) => {
               const { elementRef, isVisible } = useScrollAnimation();
               return (
                 <div key={index} ref={elementRef} className={`timeline-item relative pl-12 rtl:pl-0 rtl:pr-12 fade-in ${isVisible ? 'active' : ''}`}>
@@ -71,31 +99,31 @@ const Work: React.FC = () => {
                     <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                       <div>
                         <h3 className="text-xl font-bold text-zai-accent mb-1">
-                          {t('language') === 'ar' ? exp.companyAr : exp.company}
+                          {t('language') === 'ar' ? project.projectAr : project.project}
                         </h3>
                         <h4 className="text-lg font-semibold text-white mb-2">
-                          {t('language') === 'ar' ? exp.positionAr : exp.position}
+                          {t('language') === 'ar' ? project.clientAr : project.client}
                         </h4>
                         <p className="text-gray-400 text-sm">
-                          {t('language') === 'ar' ? exp.locationAr : exp.location}
+                          {t('language') === 'ar' ? project.locationAr : project.location}
                         </p>
                       </div>
                       <div className="text-right rtl:text-left mt-2 md:mt-0">
                         <span className="text-sm text-gray-400 block">
-                          {t('language') === 'ar' ? exp.periodAr : exp.period}
+                          {t('language') === 'ar' ? project.periodAr : project.period}
                         </span>
                         <span className={`text-sm font-semibold ${
-                          exp.status === 'ongoing' ? 'text-zai-success' : 'text-gray-400'
+                          project.status === 'ongoing' ? 'text-zai-success' : 'text-gray-400'
                         }`}>
-                          {t(exp.status as any)}
+                          {t(project.status as any)}
                         </span>
                       </div>
                     </div>
                     <p className="text-gray-300 mb-4 leading-relaxed">
-                      {t('language') === 'ar' ? exp.descriptionAr : exp.description}
+                      {t('language') === 'ar' ? project.descriptionAr : project.description}
                     </p>
                     <div className="flex flex-wrap gap-2">
-                      {exp.technologies.map((tech, techIndex) => (
+                      {project.technologies.map((tech, techIndex) => (
                         <span key={techIndex} className="px-3 py-1 bg-zai-primary rounded-full text-sm">
                           {tech}
                         </span>

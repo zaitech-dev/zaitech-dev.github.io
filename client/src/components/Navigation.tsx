@@ -35,7 +35,6 @@ const Navigation: React.FC = () => {
     { key: 'about', section: 'about' },
     { key: 'work', section: 'work' },
     { key: 'skills', section: 'skills' },
-    { key: 'testimonials', section: 'testimonials' },
     { key: 'contact', section: 'contact' },
   ];
 

@@ -8,8 +8,8 @@ const Skills: React.FC = () => {
 
   const skillCategories = [
     {
-      title: t('leadership'),
-      titleKey: 'leadership',
+      title: t('coreCapabilities'),
+      titleKey: 'coreCapabilities',
       skills: [
         t('techLeadership'),
         t('backendDev'),
@@ -21,13 +21,25 @@ const Skills: React.FC = () => {
     {
       title: t('programmingLanguages'),
       titleKey: 'programmingLanguages',
-      skills: ['Kotlin', 'Golang', 'C++', 'Python', 'C', 'Javascript'],
+      skills: ['Golang', 'Kotlin', 'Python', 'C++', 'TypeScript', 'JavaScript'],
       isGrid: true
     },
     {
       title: t('frameworksLibraries'),
       titleKey: 'frameworksLibraries',
-      skills: ['Spring Boot', 'Ktor', 'MATLAB', 'Flask', 'TensorFlow', 'ROS'],
+      skills: ['Spring Boot', 'Ktor', 'React', 'Node.js', 'Android SDK', 'gRPC'],
+      isGrid: true
+    },
+    {
+      title: t('cloudInfrastructure'),
+      titleKey: 'cloudInfrastructure',
+      skills: ['Google Cloud', 'AWS', 'Kubernetes', 'Docker', 'Terraform', 'CI/CD'],
+      isGrid: true
+    },
+    {
+      title: t('databases'),
+      titleKey: 'databases',
+      skills: ['PostgreSQL', 'MongoDB', 'Redis', 'BigQuery', 'Elasticsearch', 'Analytics'],
       isGrid: true
     }
   ];
@@ -41,7 +53,7 @@ const Skills: React.FC = () => {
           <p className="text-xl text-gray-300">{t('skillsDescription')}</p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
           {skillCategories.map((category, index) => {
             const { elementRef, isVisible } = useScrollAnimation();
             return (

@@ -6,7 +6,7 @@ import Services from '@/components/sections/Services';
 import Work from '@/components/sections/Work';
 import Skills from '@/components/sections/Skills';
 import Portfolio from '@/components/sections/Portfolio';
-import Testimonials from '@/components/sections/Testimonials';
+
 import Contact from '@/components/sections/Contact';
 import Footer from '@/components/sections/Footer';
 
@@ -20,7 +20,6 @@ const Home: React.FC = () => {
       <Work />
       <Skills />
       <Portfolio />
-      <Testimonials />
       <Contact />
       <Footer />
     </div>
