@@ -2,6 +2,7 @@ import React from 'react';
 import { User, TrendingUp, Users, Target } from 'lucide-react';
 import { useLanguage } from '@/components/LanguageProvider';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import logoWhite from '@assets/zaitech-logo-w-nobg_1750701872454.png';
 
 const About: React.FC = () => {
   const { t } = useLanguage();
@@ -49,40 +50,18 @@ const About: React.FC = () => {
         <div ref={contentRef} className={`glass rounded-2xl p-8 md:p-12 mb-16 fade-in ${contentVisible ? 'active' : ''}`}>
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-zai-accent">{t('ourApproach')}</h3>
-              <p className="text-lg leading-relaxed text-gray-300 mb-6">
-                {t('aboutDescription')}
-              </p>
-              <p className="text-lg leading-relaxed text-gray-300 mb-6">
-                {t('approachDescription')}
-              </p>
-              <div className="border-l-4 border-zai-accent pl-4">
-                <p className="text-sm text-gray-400">{t('founderNote')}</p>
-                <a href="https://zaitera.com" target="_blank" rel="noopener noreferrer" className="text-zai-accent hover:text-blue-400 text-sm">
-                  {t('founderLink')} →
-                </a>
-              </div>
+              <h3 className="text-2xl font-bold mb-6 text-zai-accent">{t('ourApproach')}</h3>
+              <p className="text-gray-300 leading-relaxed mb-6">{t('aboutDescription')}</p>
+              <p className="text-gray-300 leading-relaxed">{t('approachDescription')}</p>
             </div>
             <div className="flex justify-center">
-              <div className="w-80 h-80 rounded-2xl bg-gradient-to-br from-zai-accent/20 to-zai-success/20 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-32 h-32 mx-auto mb-4 bg-zai-accent/20 rounded-full flex items-center justify-center">
-                    <div className="text-6xl font-bold text-zai-accent">Z</div>
-                  </div>
-                  <h4 className="text-xl font-bold text-white">Zaitech Development</h4>
-                  <p className="text-gray-400">Enterprise Solutions</p>
-                </div>
-              </div>
+              <img 
+                src={logoWhite} 
+                alt="Zaitech Development Logo" 
+                className="h-48 w-auto opacity-90"
+              />
             </div>
-          </div>
-          
-          <div className="mt-12 p-6 bg-zai-primary/50 rounded-xl">
-            <div className="text-center md:text-left">
-              <h3 className="text-xl font-semibold mb-2">{t('contactDetails')}</h3>
-              <p className="text-gray-300">{t('location')}</p>
-              <p className="text-zai-accent font-semibold">{t('contactEmail')}</p>
-            </div>
-          </div>
+        </div>
         </div>
 
         <div ref={achievementsRef} className={`fade-in ${achievementsVisible ? 'active' : ''}`}>

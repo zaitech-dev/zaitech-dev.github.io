@@ -72,8 +72,7 @@ export const translations = {
     portfolioTitle: 'Featured Projects',
     viewProject: 'View Project →',
     
-    // Testimonials Section
-    testimonialsTitle: 'What Our Partners Say',
+
     
     // Contact Section
     contactTitle: 'Get In Touch',
@@ -156,8 +155,7 @@ export const translations = {
     portfolioTitle: 'المشاريع المميزة',
     viewProject: '← عرض المشروع',
     
-    // Testimonials Section
-    testimonialsTitle: 'ما يقوله شركاؤنا',
+
     
     // Services Section
     servicesTitle: 'خدماتنا',
