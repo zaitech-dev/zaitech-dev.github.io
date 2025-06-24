@@ -44,7 +44,7 @@ export const translations = {
     servicesDescription: 'Enterprise-grade technology solutions designed to scale your business globally',
     platformDevelopmentTitle: 'Platform Development',
     platformDevelopmentDesc: 'End-to-end development of scalable e-commerce platforms, payment systems, and enterprise applications that handle millions of transactions.',
-    systemScalingTitle: 'System Scaling & Optimization', 
+    systemScalingTitle: 'System Scaling & Optimization',
     systemScalingDesc: 'Infrastructure scaling, performance optimization, and multi-country platform expansion with proven results.',
     consultancyTitle: 'Technology Consulting',
     consultancyDesc: 'Strategic technical guidance for architecture decisions, technology stack selection, and digital transformation initiatives.',
