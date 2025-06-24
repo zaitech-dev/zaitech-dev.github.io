@@ -43,16 +43,16 @@ const Hero: React.FC = () => {
         
         {/* Social Links */}
         <div className="flex justify-center space-x-6 rtl:space-x-reverse mb-8">
-          <a href="#" className="text-2xl text-white hover:text-zai-accent transition-colors" aria-label="GitHub">
+          <a href="https://github.com/zaitech-dev" target="_blank" rel="noopener noreferrer" className="text-2xl text-white hover:text-zai-accent transition-colors" aria-label="GitHub">
             <Github size={32} />
           </a>
-          <a href="#" className="text-2xl text-white hover:text-zai-accent transition-colors" aria-label="LinkedIn">
+          <a href="https://linkedin.com/company/zaitech-dev" target="_blank" rel="noopener noreferrer" className="text-2xl text-white hover:text-zai-accent transition-colors" aria-label="LinkedIn">
             <Linkedin size={32} />
           </a>
-          <a href="#" className="text-2xl text-white hover:text-zai-accent transition-colors" aria-label="Instagram">
+          <a href="https://instagram.com/a.z.lens" target="_blank" rel="noopener noreferrer" className="text-2xl text-white hover:text-zai-accent transition-colors" aria-label="Instagram">
             <Instagram size={32} />
           </a>
-          <a href="#" className="text-2xl text-white hover:text-zai-accent transition-colors" aria-label="RSS">
+          <a href="https://zaitech.blog" target="_blank" rel="noopener noreferrer" className="text-2xl text-white hover:text-zai-accent transition-colors" aria-label="RSS">
             <Rss size={32} />
           </a>
         </div>
@@ -65,14 +65,12 @@ const Hero: React.FC = () => {
           >
             {t('learnMore')}
           </Button>
-          <Button
-            variant="outline"
-            size="lg"
-            onClick={() => scrollToSection('contact')}
-            className="border-white/30 text-white hover:bg-white/10 font-semibold px-8 py-3"
+          <a
+            href="mailto:contact@zaitech.dev"
+            className="border border-white/30 text-white hover:bg-white/10 font-semibold px-8 py-3 rounded-lg transition-colors inline-block"
           >
             {t('getInTouch')}
-          </Button>
+          </a>
         </div>
       </div>
       
