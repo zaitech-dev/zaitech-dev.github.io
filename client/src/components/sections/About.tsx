@@ -20,7 +20,7 @@ const About: React.FC = () => {
     {
       icon: Target,
       title: t('systemScaling'),
-      description: t('systemScalingDesc'),
+      description: t('systemScalingAchievementDesc'),
       color: 'text-blue-400'
     },
     {
