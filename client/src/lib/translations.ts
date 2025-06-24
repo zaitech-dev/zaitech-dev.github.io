@@ -48,8 +48,8 @@ export const translations = {
     systemScalingDesc: 'Infrastructure scaling, performance optimization, and multi-country platform expansion with proven results.',
     consultancyTitle: 'Technology Consulting',
     consultancyDesc: 'Strategic technical guidance for architecture decisions, technology stack selection, and digital transformation initiatives.',
-    trainingTitle: 'Enterprise Training Programs',
-    trainingDesc: 'Comprehensive training in campaign management platforms, pricing intelligence systems, cloud infrastructure scaling, and modern development practices including Golang, Kotlin, and enterprise architecture patterns.',
+    trainingTitle: 'Technical Training & Development',
+    trainingDesc: 'Advanced technical training programs covering enterprise architecture, modern programming languages (Golang, Kotlin, TypeScript), cloud-native development, AdTech platforms, pricing algorithms, team leadership, and agile methodologies for scaling engineering teams.',
     
     // Work Section
     workTitle: 'Our Projects',
@@ -164,8 +164,8 @@ export const translations = {
     systemScalingDesc: 'توسيع البنية التحتية وتحسين الأداء وتوسيع المنصات متعددة البلدان مع نتائج مثبتة.',
     consultancyTitle: 'الاستشارات التقنية',
     consultancyDesc: 'إرشادات تقنية استراتيجية لقرارات الهندسة المعمارية واختيار المكدس التقني ومبادرات التحول الرقمي.',
-    trainingTitle: 'برامج التدريب للمؤسسات',
-    trainingDesc: 'تدريب شامل في منصات إدارة الحملات وأنظمة ذكاء التسعير وتوسيع البنية التحتية السحابية وممارسات التطوير الحديثة بما في ذلك Golang و Kotlin وأنماط هندسة المؤسسات.',
+    trainingTitle: 'التدريب التقني والتطوير',
+    trainingDesc: 'برامج تدريب تقني متقدمة تغطي هندسة المؤسسات ولغات البرمجة الحديثة (Golang، Kotlin، TypeScript) والتطوير السحابي الأصلي ومنصات AdTech وخوارزميات التسعير وقيادة الفرق ومنهجيات الرشاقة لتوسيع فرق الهندسة.',
     
     // Contact Section
     contactTitle: 'تواصل معنا',

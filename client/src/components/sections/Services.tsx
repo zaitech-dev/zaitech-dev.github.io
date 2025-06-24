@@ -36,8 +36,8 @@ const Services: React.FC = () => {
       icon: BookOpen,
       title: t('trainingTitle'),
       description: t('trainingDesc'),
-      features: ['Campaign Management', 'Pricing Intelligence', 'Cloud Infrastructure', 'Modern Development'],
-      featuresAr: ['إدارة الحملات', 'ذكاء التسعير', 'البنية التحتية السحابية', 'التطوير الحديث'],
+      features: ['Enterprise Architecture', 'Advanced Programming', 'Team Leadership', 'Cloud-Native Development'],
+      featuresAr: ['هندسة المؤسسات', 'البرمجة المتقدمة', 'قيادة الفرق', 'التطوير السحابي الأصلي'],
       color: 'from-purple-500 to-pink-600'
     }
   ];
