@@ -55,6 +55,10 @@ export const translations = {
     ongoing: 'Active',
     completed: 'Delivered',
 
+    // Portfolio Section
+    portfolioTitle: 'Portfolio',
+    viewProject: 'View Project',
+
     // Skills Section
     skillsTitle: 'Technology Stack',
     skillsDescription: 'Cutting-edge technologies powering our scalable solutions.',
@@ -127,10 +131,26 @@ export const translations = {
     location: 'عمليات عالمية – هولندا والبرازيل',
     contactEmail: 'contact@zaitech.dev',
 
+    // Services Section
+    servicesTitle: 'خدماتنا',
+    servicesDescription: 'حلول تقنية عالية المستوى مصممة لتسريع نمو أعمالك العالمية.',
+    platformDevelopmentTitle: 'تطوير المنصات',
+    platformDevelopmentDesc: 'تطوير شامل لمنصات التجارة الإلكترونية القوية وأنظمة الدفع وتطبيقات المؤسسات التي تتعامل مع ملايين المعاملات بسلاسة.',
+    systemScalingTitle: 'توسيع وتحسين الأنظمة',
+    systemScalingDesc: 'نتائج مؤكدة في توسيع البنية التحتية وتحسين الأداء والتوسع في أسواق متعددة البلدان.',
+    consultancyTitle: 'الاستشارات التقنية',
+    consultancyDesc: 'خدمات استشارية استراتيجية للهندسة المعمارية التقنية واختيار التقنيات ومبادرات التحول الرقمي.',
+    trainingTitle: 'التدريب والتطوير التقني',
+    trainingDesc: 'برامج تدريبية شاملة تغطي هندسة المؤسسات واللغات الحديثة (Golang، Kotlin، TypeScript) والتطوير السحابي الأصلي ومنصات AdTech وخوارزميات التسعير وقيادة الفرق والمنهجيات الرشيقة للفرق الهندسية عالية الأداء.',
+
     // Work Section
     workTitle: 'مشاريعنا',
     ongoing: 'نشط',
     completed: 'منجز',
+
+    // Portfolio Section
+    portfolioTitle: 'معرض الأعمال',
+    viewProject: 'عرض المشروع',
 
     // Skills Section
     skillsTitle: 'التقنيات المستخدمة',
@@ -145,6 +165,21 @@ export const translations = {
     databases: 'قواعد البيانات والتحليلات',
     programmingLanguages: 'لغات البرمجة',
     frameworksLibraries: 'الأطر والمكتبات',
+
+    // Contact Section
+    contactTitle: 'تواصل معنا',
+    contactDescription: 'تواصل معنا لاكتشاف كيف يمكننا دفع الابتكار التقني لأعمالك.',
+    name: 'الاسم',
+    emailField: 'البريد الإلكتروني',
+    subject: 'الموضوع',
+    message: 'الرسالة',
+    sendMessage: 'إرسال الرسالة',
+    namePlaceholder: 'اسمك',
+    emailPlaceholder: 'your@email.com',
+    subjectPlaceholder: 'استفسار عن مشروع',
+    messagePlaceholder: 'أخبرنا عن مشروعك...',
+    messageSent: 'تم إرسال رسالتك. شكراً لك!',
+    messageError: 'حدث خطأ. يرجى المحاولة مرة أخرى.',
 
     // Footer
     footerCopyright: '© 2024 Zaitech Development . جميع الحقوق محفوظة.',

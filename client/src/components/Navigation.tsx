@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { useLanguage } from '@/components/LanguageProvider';
-import logoWhite from '@assets/zaitech-logo-w-nobg_1750701872454.png';
+import logoWhite from '@assets/zaitech-logo-b-nobg_1750701875981.png';
 import { Button } from '@/components/ui/button';
 
 const Navigation: React.FC = () => {

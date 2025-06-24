@@ -3,7 +3,7 @@ import { useLanguage } from '@/components/LanguageProvider';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const Work: React.FC = () => {
-  const { t } = useLanguage();
+  const { language, t } = useLanguage();
   const { elementRef: titleRef, isVisible: titleVisible } = useScrollAnimation();
 
   const projects = [
@@ -99,18 +99,18 @@ const Work: React.FC = () => {
                     <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                       <div>
                         <h3 className="text-xl font-bold text-zai-accent mb-1">
-                          {t('language') === 'ar' ? project.projectAr : project.project}
+                          {language === 'ar' ? project.projectAr : project.project}
                         </h3>
                         <h4 className="text-lg font-semibold text-white mb-2">
-                          {t('language') === 'ar' ? project.clientAr : project.client}
+                          {language === 'ar' ? project.clientAr : project.client}
                         </h4>
                         <p className="text-gray-400 text-sm">
-                          {t('language') === 'ar' ? project.locationAr : project.location}
+                          {language === 'ar' ? project.locationAr : project.location}
                         </p>
                       </div>
                       <div className="text-right rtl:text-left mt-2 md:mt-0">
                         <span className="text-sm text-gray-400 block">
-                          {t('language') === 'ar' ? project.periodAr : project.period}
+                          {language === 'ar' ? project.periodAr : project.period}
                         </span>
                         <span className={`text-sm font-semibold ${
                           project.status === 'ongoing' ? 'text-zai-success' : 'text-gray-400'
@@ -120,7 +120,7 @@ const Work: React.FC = () => {
                       </div>
                     </div>
                     <p className="text-gray-300 mb-4 leading-relaxed">
-                      {t('language') === 'ar' ? project.descriptionAr : project.description}
+                      {language === 'ar' ? project.descriptionAr : project.description}
                     </p>
                     <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech, techIndex) => (

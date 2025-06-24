@@ -2,7 +2,7 @@ import React from 'react';
 import { User, TrendingUp, Users, Target } from 'lucide-react';
 import { useLanguage } from '@/components/LanguageProvider';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import logoWhite from '@assets/zaitech-logo-w-nobg_1750701872454.png';
+import logoWhite from '@assets/zaitech-logo-b-nobg_1750701875981.png';
 
 const About: React.FC = () => {
   const { t } = useLanguage();

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Github, Linkedin, Mail, Instagram, Rss } from 'lucide-react';
 import { useLanguage } from '@/components/LanguageProvider';
-import logoWhite from '@assets/zaitech-logo-w-nobg_1750701872454.png';
+import logoWhite from '@assets/zaitech-logo-b-nobg_1750701875981.png';
 
 const Footer: React.FC = () => {
   const { t } = useLanguage();

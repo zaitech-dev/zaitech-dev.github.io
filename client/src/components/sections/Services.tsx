@@ -4,7 +4,7 @@ import { useLanguage } from '@/components/LanguageProvider';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const Services: React.FC = () => {
-  const { t } = useLanguage();
+  const { language, t } = useLanguage();
   const { elementRef: titleRef, isVisible: titleVisible } = useScrollAnimation();
 
   const services = [
@@ -67,7 +67,7 @@ const Services: React.FC = () => {
                     <div key={featureIndex} className="flex items-center space-x-2 rtl:space-x-reverse">
                       <div className="w-2 h-2 bg-zai-accent rounded-full"></div>
                       <span className="text-sm text-gray-400">
-                        {t('language') === 'ar' ? service.featuresAr[featureIndex] : feature}
+                        {language === 'ar' ? service.featuresAr[featureIndex] : feature}
                       </span>
                     </div>
                   ))}

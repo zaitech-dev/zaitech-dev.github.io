@@ -4,7 +4,7 @@ import { useLanguage } from '@/components/LanguageProvider';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const Portfolio: React.FC = () => {
-  const { t } = useLanguage();
+  const { language, t } = useLanguage();
   const { elementRef: titleRef, isVisible: titleVisible } = useScrollAnimation();
 
   const projects = [
@@ -58,22 +58,22 @@ const Portfolio: React.FC = () => {
               <div key={index} ref={elementRef} className={`glass rounded-xl overflow-hidden hover:scale-105 transition-transform fade-in ${isVisible ? 'active' : ''}`}>
                 <img 
                   src={project.image} 
-                  alt={t('language') === 'ar' ? project.titleAr : project.title}
+                  alt={language === 'ar' ? project.titleAr : project.title}
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-3">
-                    {t('language') === 'ar' ? project.titleAr : project.title}
+                    {language === 'ar' ? project.titleAr : project.title}
                   </h3>
                   <p className="text-gray-300 mb-4">
-                    {t('language') === 'ar' ? project.descriptionAr : project.description}
+                    {language === 'ar' ? project.descriptionAr : project.description}
                   </p>
                   
                   {project.metrics && (
                     <div className="flex flex-wrap gap-2 mb-4">
                       {project.metrics.map((metric, metricIndex) => (
                         <span key={metricIndex} className="px-2 py-1 bg-zai-success text-white text-xs rounded-full font-semibold">
-                          {t('language') === 'ar' ? project.metricsAr[metricIndex] : metric}
+                          {language === 'ar' ? project.metricsAr[metricIndex] : metric}
                         </span>
                       ))}
                     </div>
