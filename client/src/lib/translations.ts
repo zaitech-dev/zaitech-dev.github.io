@@ -48,6 +48,8 @@ export const translations = {
     systemScalingDesc: 'Infrastructure scaling, performance optimization, and multi-country platform expansion with proven results.',
     consultancyTitle: 'Technology Consulting',
     consultancyDesc: 'Strategic technical guidance for architecture decisions, technology stack selection, and digital transformation initiatives.',
+    trainingTitle: 'Enterprise Training Programs',
+    trainingDesc: 'Comprehensive training in campaign management platforms, pricing intelligence systems, cloud infrastructure scaling, and modern development practices including Golang, Kotlin, and enterprise architecture patterns.',
     
     // Work Section
     workTitle: 'Our Projects',

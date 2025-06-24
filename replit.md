@@ -111,6 +111,7 @@ This is a modern, full-stack web application built as a portfolio website for Za
 - Enhanced "Our Approach" section with project-informed content emphasizing unified platforms, automation, and enterprise solutions
 - Updated About description to reflect diverse industry experience (AdTech, retail, manufacturing, media)
 - Simplified "Our Approach" description to be more concise and impactful, focusing on key results
+- Added Enterprise Training Programs as fourth service offering, covering campaign management, pricing intelligence, cloud scaling, and modern development practices
 
 ## Changelog
 
