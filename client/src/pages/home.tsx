@@ -6,7 +6,7 @@ import Services from '@/components/sections/Services';
 import Work from '@/components/sections/Work';
 import Skills from '@/components/sections/Skills';
 
-import Contact from '@/components/sections/Contact';
+
 import Footer from '@/components/sections/Footer';
 
 const Home: React.FC = () => {
@@ -18,7 +18,6 @@ const Home: React.FC = () => {
       <Services />
       <Work />
       <Skills />
-      <Contact />
       <Footer />
     </div>
   );

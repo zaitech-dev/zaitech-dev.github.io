@@ -107,6 +107,7 @@ This is a modern, full-stack web application built as a portfolio website for Za
 - Updated Skills section to enterprise "Technology Stack" format
 - Added company logo to About section
 - Updated footer with correct social media links: GitHub (zaitech-dev), LinkedIn (company/zaitech-dev), Instagram (a.z.lens), Blog RSS (zaitech.blog)
+- Removed Contact section as email link in footer is sufficient for contact
 
 ## Changelog
 

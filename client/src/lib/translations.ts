@@ -8,7 +8,7 @@ export const translations = {
     services: 'Services',
     work: 'Projects',
     skills: 'Technology',
-    contact: 'Contact',
+
     
     // Hero Section
     heroTitle: 'Zaitech Development',
@@ -99,7 +99,7 @@ export const translations = {
     services: 'الخدمات',
     work: 'المشاريع',
     skills: 'التقنيات',
-    contact: 'التواصل',
+
     
     // Hero Section
     heroTitle: 'تطوير زايتك',
