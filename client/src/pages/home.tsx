@@ -5,9 +5,8 @@ import About from '@/components/sections/About';
 import Services from '@/components/sections/Services';
 import Work from '@/components/sections/Work';
 import Skills from '@/components/sections/Skills';
-
-
 import Footer from '@/components/sections/Footer';
+import AnalyticsTest from '@/components/AnalyticsTest';
 
 const Home: React.FC = () => {
   return (
@@ -19,6 +18,8 @@ const Home: React.FC = () => {
       <Work />
       <Skills />
       <Footer />
+      {/* Temporary analytics testing component - Remove after testing */}
+      {process.env.NODE_ENV === 'development' && <AnalyticsTest />}
     </div>
   );
 };

@@ -1,10 +1,11 @@
 import React from 'react';
 import { useLanguage } from '@/components/LanguageProvider';
+import { useScrollAnimationWithTracking } from '@/hooks/useScrollAnimationWithTracking';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const Work: React.FC = () => {
   const { language, t } = useLanguage();
-  const { elementRef: titleRef, isVisible: titleVisible } = useScrollAnimation();
+  const { elementRef: titleRef, isVisible: titleVisible } = useScrollAnimationWithTracking('work');
 
   const projects = [
     {

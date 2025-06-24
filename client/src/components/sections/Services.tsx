@@ -1,11 +1,12 @@
 import React from 'react';
 import { TrendingUp, Users, Settings, BookOpen } from 'lucide-react';
 import { useLanguage } from '@/components/LanguageProvider';
+import { useScrollAnimationWithTracking } from '@/hooks/useScrollAnimationWithTracking';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const Services: React.FC = () => {
   const { language, t } = useLanguage();
-  const { elementRef: titleRef, isVisible: titleVisible } = useScrollAnimation();
+  const { elementRef: titleRef, isVisible: titleVisible } = useScrollAnimationWithTracking('services');
 
   const services = [
     {

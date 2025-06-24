@@ -3,6 +3,7 @@ import { ChevronDown, Github, Linkedin, Instagram, Rss } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/components/LanguageProvider';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { trackButtonClick, trackExternalLink, trackContactInteraction } from '@/lib/analytics';
 
 const Hero: React.FC = () => {
   const { t } = useLanguage();
@@ -43,16 +44,44 @@ const Hero: React.FC = () => {
         
         {/* Social Links */}
         <div className="flex justify-center space-x-6 rtl:space-x-reverse mb-8">
-          <a href="https://github.com/zaitech-dev" target="_blank" rel="noopener noreferrer" className="text-2xl text-white hover:text-zai-accent transition-colors" aria-label="GitHub">
+          <a 
+            href="https://github.com/zaitech-dev" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-2xl text-white hover:text-zai-accent transition-colors" 
+            aria-label="GitHub"
+            onClick={() => trackExternalLink('https://github.com/zaitech-dev', 'GitHub')}
+          >
             <Github size={32} />
           </a>
-          <a href="https://linkedin.com/company/zaitech-dev" target="_blank" rel="noopener noreferrer" className="text-2xl text-white hover:text-zai-accent transition-colors" aria-label="LinkedIn">
+          <a 
+            href="https://linkedin.com/company/zaitech-dev" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-2xl text-white hover:text-zai-accent transition-colors" 
+            aria-label="LinkedIn"
+            onClick={() => trackExternalLink('https://linkedin.com/company/zaitech-dev', 'LinkedIn')}
+          >
             <Linkedin size={32} />
           </a>
-          <a href="https://instagram.com/a.z.lens" target="_blank" rel="noopener noreferrer" className="text-2xl text-white hover:text-zai-accent transition-colors" aria-label="Instagram">
+          <a 
+            href="https://instagram.com/a.z.lens" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-2xl text-white hover:text-zai-accent transition-colors" 
+            aria-label="Instagram"
+            onClick={() => trackExternalLink('https://instagram.com/a.z.lens', 'Instagram')}
+          >
             <Instagram size={32} />
           </a>
-          <a href="https://zaitech.blog" target="_blank" rel="noopener noreferrer" className="text-2xl text-white hover:text-zai-accent transition-colors" aria-label="RSS">
+          <a 
+            href="https://zaitech.blog" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-2xl text-white hover:text-zai-accent transition-colors" 
+            aria-label="RSS"
+            onClick={() => trackExternalLink('https://zaitech.blog', 'Blog')}
+          >
             <Rss size={32} />
           </a>
         </div>
@@ -60,7 +89,10 @@ const Hero: React.FC = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button
             size="lg"
-            onClick={() => scrollToSection('about')}
+            onClick={() => {
+              trackButtonClick('learn_more', 'hero');
+              scrollToSection('about');
+            }}
             className="bg-zai-accent hover:bg-zai-accent/80 text-white font-semibold px-8 py-3"
           >
             {t('learnMore')}
@@ -68,6 +100,7 @@ const Hero: React.FC = () => {
           <a
             href="mailto:contact@zaitech.dev"
             className="border border-white/30 text-white hover:bg-white/10 font-semibold px-8 py-3 rounded-lg transition-colors inline-block"
+            onClick={() => trackContactInteraction('email')}
           >
             {t('getInTouch')}
           </a>

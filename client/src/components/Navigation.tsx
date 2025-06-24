@@ -3,6 +3,7 @@ import { Menu, X } from 'lucide-react';
 import { useLanguage } from '@/components/LanguageProvider';
 import logoWhite from '@assets/zaitech-logo-b-nobg_1750701875981.png';
 import { Button } from '@/components/ui/button';
+import { trackButtonClick } from '@/lib/analytics';
 
 const Navigation: React.FC = () => {
   const { language, setLanguage, t } = useLanguage();
@@ -26,6 +27,8 @@ const Navigation: React.FC = () => {
         top: offsetTop,
         behavior: 'smooth',
       });
+      // Track navigation clicks
+      trackButtonClick(`nav_${sectionId}`, 'navigation');
     }
     setIsMobileMenuOpen(false);
   };

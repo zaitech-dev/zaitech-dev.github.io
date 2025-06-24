@@ -2,6 +2,7 @@ import React from 'react';
 import { Github, Linkedin, Mail, Instagram, Rss } from 'lucide-react';
 import { useLanguage } from '@/components/LanguageProvider';
 import logoWhite from '@assets/zaitech-logo-b-nobg_1750701875981.png';
+import { trackExternalLink, trackContactInteraction } from '@/lib/analytics';
 
 const Footer: React.FC = () => {
   const { t } = useLanguage();
@@ -22,6 +23,7 @@ const Footer: React.FC = () => {
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-zai-accent transition-colors" 
               aria-label="GitHub"
+              onClick={() => trackExternalLink('https://github.com/zaitech-dev', 'GitHub Footer')}
             >
               <Github size={24} />
             </a>
@@ -31,6 +33,7 @@ const Footer: React.FC = () => {
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-zai-accent transition-colors" 
               aria-label="LinkedIn"
+              onClick={() => trackExternalLink('https://linkedin.com/company/zaitech-dev', 'LinkedIn Footer')}
             >
               <Linkedin size={24} />
             </a>
@@ -40,6 +43,7 @@ const Footer: React.FC = () => {
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-zai-accent transition-colors" 
               aria-label="Instagram"
+              onClick={() => trackExternalLink('https://instagram.com/a.z.lens', 'Instagram Footer')}
             >
               <Instagram size={24} />
             </a>
@@ -49,6 +53,7 @@ const Footer: React.FC = () => {
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-zai-accent transition-colors" 
               aria-label="Blog RSS"
+              onClick={() => trackExternalLink('https://zaitech.blog', 'Blog Footer')}
             >
               <Rss size={24} />
             </a>
@@ -56,6 +61,7 @@ const Footer: React.FC = () => {
               href="mailto:contact@zaitech.dev" 
               className="text-gray-400 hover:text-zai-accent transition-colors" 
               aria-label="Email"
+              onClick={() => trackContactInteraction('email', 'footer')}
             >
               <Mail size={24} />
             </a>
