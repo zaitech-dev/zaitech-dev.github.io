@@ -1,5 +1,5 @@
 import React from 'react';
-import { TrendingUp, Users, Settings } from 'lucide-react';
+import { TrendingUp, Users, Settings, BookOpen } from 'lucide-react';
 import { useLanguage } from '@/components/LanguageProvider';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
@@ -31,6 +31,14 @@ const Services: React.FC = () => {
       features: ['Technology Strategy', 'Architecture Design', 'Digital Transformation', 'Team Leadership'],
       featuresAr: ['استراتيجية التكنولوجيا', 'تصميم الهندسة المعمارية', 'التحول الرقمي', 'قيادة الفريق'],
       color: 'from-orange-500 to-red-600'
+    },
+    {
+      icon: BookOpen,
+      title: t('trainingTitle'),
+      description: t('trainingDesc'),
+      features: ['Campaign Management', 'Pricing Intelligence', 'Cloud Infrastructure', 'Modern Development'],
+      featuresAr: ['إدارة الحملات', 'ذكاء التسعير', 'البنية التحتية السحابية', 'التطوير الحديث'],
+      color: 'from-purple-500 to-pink-600'
     }
   ];
 
@@ -43,7 +51,7 @@ const Services: React.FC = () => {
           <p className="text-xl text-gray-300">{t('servicesDescription')}</p>
         </div>
         
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => {
             const { elementRef, isVisible } = useScrollAnimation();
             const Icon = service.icon;
