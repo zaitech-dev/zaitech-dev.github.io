@@ -33,6 +33,7 @@ const Navigation: React.FC = () => {
   const navItems = [
     { key: 'home', section: 'home' },
     { key: 'about', section: 'about' },
+    { key: 'services', section: 'services' },
     { key: 'work', section: 'work' },
     { key: 'skills', section: 'skills' },
     { key: 'contact', section: 'contact' },

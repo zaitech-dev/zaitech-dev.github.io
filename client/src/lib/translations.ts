@@ -5,9 +5,9 @@ export const translations = {
     // Navigation
     home: 'Home',
     about: 'About',
-    work: 'Work',
-    skills: 'Skills',
-    testimonials: 'Testimonials',
+    services: 'Services',
+    work: 'Projects',
+    skills: 'Technology',
     contact: 'Contact',
     
     // Hero Section
@@ -68,9 +68,7 @@ export const translations = {
     programmingLanguages: 'Programming Languages',
     frameworksLibraries: 'Frameworks & Libraries',
     
-    // Portfolio Section
-    portfolioTitle: 'Featured Projects',
-    viewProject: 'View Project →',
+
     
 
     
@@ -98,9 +96,9 @@ export const translations = {
     // Navigation
     home: 'الرئيسية',
     about: 'حولنا',
-    work: 'الأعمال',
-    skills: 'المهارات',
-    testimonials: 'الشهادات',
+    services: 'الخدمات',
+    work: 'المشاريع',
+    skills: 'التقنيات',
     contact: 'التواصل',
     
     // Hero Section
@@ -151,9 +149,7 @@ export const translations = {
     programmingLanguages: 'لغات البرمجة',
     frameworksLibraries: 'الأطر والمكتبات',
     
-    // Portfolio Section
-    portfolioTitle: 'المشاريع المميزة',
-    viewProject: '← عرض المشروع',
+
     
 
     

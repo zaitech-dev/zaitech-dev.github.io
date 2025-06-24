@@ -8,18 +8,18 @@ const Work: React.FC = () => {
 
   const projects = [
     {
-      client: 'ShowSeeker',
-      clientAr: 'ShowSeeker',
-      project: 'Advanced Programmatic Campaign Management',
-      projectAr: 'إدارة الحملات البرمجية المتقدمة',
+      client: 'Leading AdTech Platform',
+      clientAr: 'منصة تكنولوجيا إعلانية رائدة',
+      project: 'Advanced Campaign Management Platform',
+      projectAr: 'منصة إدارة الحملات المتقدمة',
       location: 'United States',
       locationAr: 'الولايات المتحدة',
       period: '2024 – Present',
       periodAr: '2024 – الحاضر',
       status: 'ongoing',
-      description: 'Building and extending advanced programmatic campaign management capabilities for a leading advertising technology platform. Developing sophisticated automation tools, real-time bidding optimization, and cross-platform campaign orchestration systems that handle billions in advertising spend.',
-      descriptionAr: 'بناء وتوسيع قدرات إدارة الحملات البرمجية المتقدمة لمنصة تكنولوجيا إعلانية رائدة. تطوير أدوات أتمتة متطورة وتحسين المزايدة في الوقت الفعلي وأنظمة تنسيق الحملات عبر المنصات التي تتعامل مع مليارات من الإنفاق الإعلاني.',
-      technologies: ['Campaign Management', 'Real-time Bidding', 'Data Analytics', 'API Integration', 'Automation']
+      description: 'Developing a comprehensive campaign management platform that unifies linear and digital advertising operations. Building automated workflows, real-time reporting dashboards, and integrated billing systems that process hundreds of millions in ad revenue. The platform serves MVPDs, broadcasters, agencies, and networks with custom proposal building and predictive campaign analytics.',
+      descriptionAr: 'تطوير منصة شاملة لإدارة الحملات توحد عمليات الإعلان الخطي والرقمي. بناء سير عمل آلي ولوحات تقارير في الوقت الفعلي وأنظمة فوترة متكاملة تعالج مئات الملايين من إيرادات الإعلانات. تخدم المنصة مزودي خدمات الفيديو والمذيعين والوكالات والشبكات مع بناء عروض مخصصة وتحليلات حملات تنبؤية.',
+      technologies: ['Linear & Digital Integration', 'Automated Workflows', 'Real-time Analytics', 'Campaign Optimization', 'Revenue Management']
     },
     {
       client: 'Electronics Retail Chain',
@@ -31,9 +31,9 @@ const Work: React.FC = () => {
       period: '2023 – 2024',
       periodAr: '2023 – 2024',
       status: 'completed',
-      description: 'Developed an automated pricing system for smartphones and electronics that fetches real-time prices from major wholesale companies. The system analyzes market data, competitor pricing, and demand patterns to determine optimal pricing strategies, resulting in improved profit margins and competitive positioning.',
-      descriptionAr: 'طورنا نظام تسعير آلي للهواتف الذكية والإلكترونيات يجلب الأسعار في الوقت الفعلي من شركات الجملة الكبرى. يحلل النظام بيانات السوق وأسعار المنافسين وأنماط الطلب لتحديد استراتيجيات التسعير المثلى، مما يؤدي إلى تحسين هوامش الربح والموقع التنافسي.',
-      technologies: ['Price Intelligence', 'Market Analysis', 'API Integration', 'Data Processing', 'Real-time Systems']
+      description: 'Built an automated pricing intelligence system for a major electronics retailer that aggregates real-time wholesale prices from multiple bulk buyers and sellers. The system uses machine learning algorithms to analyze market trends, competitor pricing, and demand patterns to recommend optimal pricing strategies, resulting in 15% improved profit margins and enhanced market competitiveness.',
+      descriptionAr: 'بنينا نظام ذكاء تسعير آلي لبائع تجزئة إلكترونيات كبير يجمع أسعار الجملة في الوقت الفعلي من مشترين وبائعين بالجملة متعددين. يستخدم النظام خوارزميات التعلم الآلي لتحليل اتجاهات السوق وأسعار المنافسين وأنماط الطلب لاقتراح استراتيجيات تسعير مثلى، مما أدى إلى تحسين هوامش الربح بنسبة 15% وتعزيز القدرة التنافسية في السوق.',
+      technologies: ['Machine Learning', 'Price Intelligence', 'Market Analysis', 'API Integration', 'Real-time Data Processing']
     },
     {
       client: 'Dutch E-Commerce Retailer',

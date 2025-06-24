@@ -97,9 +97,19 @@ This is a modern, full-stack web application built as a portfolio website for Za
 - **Development**: In-memory storage implementation for testing
 - **Production**: PostgreSQL with Neon Database connection
 
+## Recent Changes
+
+- June 24, 2025: Transformed portfolio from personal CV to company-focused presentation
+- Removed testimonials section and portfolio section to eliminate redundancy
+- Updated navigation to match actual sections (Services, Projects, Technology)
+- Added ShowSeeker-inspired advanced campaign management project (without naming client)
+- Enhanced automated pricing system project description with ML capabilities
+- Updated Skills section to enterprise "Technology Stack" format
+- Added company logo to About section
+
 ## Changelog
 
-- June 24, 2025. Initial setup
+- June 24, 2025. Initial setup and major restructuring to company format
 
 ## User Preferences
 
