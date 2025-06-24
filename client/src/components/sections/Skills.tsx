@@ -11,11 +11,11 @@ const Skills: React.FC = () => {
       title: t('coreCapabilities'),
       titleKey: 'coreCapabilities',
       skills: [
-        t('techLeadership'),
-        t('backendDev'),
-        t('paymentProcessing'),
-        t('ecommerceSolutions'),
-        t('mobileCloud')
+        'Technical Leadership',
+        'Backend Development', 
+        'Payment Processing',
+        'E-Commerce Solutions',
+        'Mobile & Cloud Integration'
       ]
     },
     {
@@ -53,30 +53,20 @@ const Skills: React.FC = () => {
           <p className="text-xl text-gray-300">{t('skillsDescription')}</p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {skillCategories.map((category, index) => {
             const { elementRef, isVisible } = useScrollAnimation();
             return (
-              <div key={index} ref={elementRef} className={`glass rounded-xl p-6 fade-in ${isVisible ? 'active' : ''}`}>
-                <h3 className="text-xl font-bold mb-4 text-zai-accent">{category.title}</h3>
-                {category.isGrid ? (
-                  <div className="grid grid-cols-2 gap-3">
-                    {category.skills.map((skill, skillIndex) => (
-                      <div key={skillIndex} className="flex items-center space-x-2 rtl:space-x-reverse">
-                        <div className={`w-3 h-3 rounded-full ${
-                          skillIndex % 2 === 0 ? 'bg-zai-accent' : 'bg-zai-success'
-                        }`}></div>
-                        <span className="text-gray-300">{skill}</span>
-                      </div>
-                    ))}
-                  </div>
-                ) : (
-                  <ul className="space-y-2 text-gray-300">
-                    {category.skills.map((skill, skillIndex) => (
-                      <li key={skillIndex}>{skill}</li>
-                    ))}
-                  </ul>
-                )}
+              <div key={index} ref={elementRef} className={`glass rounded-xl p-6 h-fit fade-in ${isVisible ? 'active' : ''}`}>
+                <h3 className="text-lg font-bold mb-4 text-zai-accent text-center">{category.title}</h3>
+                <div className="space-y-3">
+                  {category.skills.map((skill, skillIndex) => (
+                    <div key={skillIndex} className="flex items-center space-x-2 rtl:space-x-reverse">
+                      <div className="w-2 h-2 rounded-full bg-zai-success flex-shrink-0"></div>
+                      <span className="text-sm text-gray-300">{skill}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             );
           })}

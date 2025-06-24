@@ -66,7 +66,7 @@ const Services: React.FC = () => {
                 <div className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
                     <div key={featureIndex} className="flex items-center space-x-2 rtl:space-x-reverse">
-                      <div className="w-2 h-2 bg-zai-accent rounded-full"></div>
+                      <div className="w-2 h-2 bg-zai-success rounded-full"></div>
                       <span className="text-sm text-gray-400">
                         {language === 'ar' ? service.featuresAr[featureIndex] : feature}
                       </span>
