@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, Instagram, Rss } from 'lucide-react';
 import { useLanguage } from '@/components/LanguageProvider';
 import logoWhite from '@assets/zaitech-logo-w-nobg_1750701872454.png';
 
@@ -17,18 +17,40 @@ const Footer: React.FC = () => {
           
           <div className="flex items-center space-x-6 rtl:space-x-reverse">
             <a 
-              href="#" 
+              href="https://github.com/zaitech-dev" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-400 hover:text-zai-accent transition-colors" 
               aria-label="GitHub"
             >
               <Github size={24} />
             </a>
             <a 
-              href="#" 
+              href="https://linkedin.com/company/zaitech-dev" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-400 hover:text-zai-accent transition-colors" 
               aria-label="LinkedIn"
             >
               <Linkedin size={24} />
+            </a>
+            <a 
+              href="https://instagram.com/a.z.lens" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-zai-accent transition-colors" 
+              aria-label="Instagram"
+            >
+              <Instagram size={24} />
+            </a>
+            <a 
+              href="https://zaitech.blog" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-zai-accent transition-colors" 
+              aria-label="Blog RSS"
+            >
+              <Rss size={24} />
             </a>
             <a 
               href="mailto:contact@zaitech.dev" 
