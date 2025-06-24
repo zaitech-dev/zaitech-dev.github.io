@@ -61,26 +61,6 @@ const Navigation: React.FC = () => {
                 {t(item.key as any)}
               </button>
             ))}
-            
-            {/* Language Switcher */}
-            <div className="flex items-center space-x-2 rtl:space-x-reverse">
-              <Button
-                variant={language === 'en' ? 'default' : 'secondary'}
-                size="sm"
-                onClick={() => setLanguage('en')}
-                className={language === 'en' ? 'bg-zai-accent hover:bg-zai-accent/80' : 'bg-gray-600 hover:bg-gray-500'}
-              >
-                EN
-              </Button>
-              <Button
-                variant={language === 'ar' ? 'default' : 'secondary'}
-                size="sm"
-                onClick={() => setLanguage('ar')}
-                className={language === 'ar' ? 'bg-zai-accent hover:bg-zai-accent/80' : 'bg-gray-600 hover:bg-gray-500'}
-              >
-                العربية
-              </Button>
-            </div>
           </div>
           
           {/* Mobile Menu Button */}
@@ -104,24 +84,6 @@ const Navigation: React.FC = () => {
                 {t(item.key as any)}
               </button>
             ))}
-            <div className="flex space-x-2 rtl:space-x-reverse pt-2">
-              <Button
-                variant={language === 'en' ? 'default' : 'secondary'}
-                size="sm"
-                onClick={() => setLanguage('en')}
-                className={language === 'en' ? 'bg-zai-accent hover:bg-zai-accent/80' : 'bg-gray-600 hover:bg-gray-500'}
-              >
-                EN
-              </Button>
-              <Button
-                variant={language === 'ar' ? 'default' : 'secondary'}
-                size="sm"
-                onClick={() => setLanguage('ar')}
-                className={language === 'ar' ? 'bg-zai-accent hover:bg-zai-accent/80' : 'bg-gray-600 hover:bg-gray-500'}
-              >
-                العربية
-              </Button>
-            </div>
           </div>
         )}
       </div>

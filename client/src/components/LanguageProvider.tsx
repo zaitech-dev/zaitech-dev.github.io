@@ -21,6 +21,14 @@ export const useLanguage = () => {
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [language, setLanguage] = useState<Language>('en');
 
+  // Temporarily lock language to English
+  const handleSetLanguage = (lang: Language) => {
+    // For now, only allow English
+    if (lang === 'en') {
+      setLanguage(lang);
+    }
+  };
+
   const t = (key: TranslationKey): string => {
     return translations[language][key] || translations.en[key];
   };
@@ -33,7 +41,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   }, [language, dir]);
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t, dir }}>
+    <LanguageContext.Provider value={{ language, setLanguage: handleSetLanguage, t, dir }}>
       {children}
     </LanguageContext.Provider>
   );
