@@ -48,7 +48,7 @@ export const translations = {
     consultancyTitle: 'Technology Consulting',
     consultancyDesc: 'Strategic advisory services for technical architecture, technology stack selection, and digital transformation initiatives.',
     trainingTitle: 'Technical Training & Development',
-    trainingDesc: 'Comprehensive training programs covering enterprise architecture, modern languages (Golang, Kotlin, TypeScript), cloud-native development, AdTech platforms, pricing algorithms, team leadership, and agile methodologies for high-performing engineering teams.',
+    trainingDesc: 'Comprehensive training programs covering enterprise architecture, modern programming languages, cloud-native development, team leadership, and agile methodologies.',
 
     // Work Section
     workTitle: 'Our Projects',
