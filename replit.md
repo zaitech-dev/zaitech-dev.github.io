@@ -108,6 +108,8 @@ This is a modern, full-stack web application built as a portfolio website for Za
 - Added company logo to About section
 - Updated footer with correct social media links: GitHub (zaitech-dev), LinkedIn (company/zaitech-dev), Instagram (a.z.lens), Blog RSS (zaitech.blog)
 - Removed Contact section as email link in footer is sufficient for contact
+- Enhanced "Our Approach" section with project-informed content emphasizing unified platforms, automation, and enterprise solutions
+- Updated About description to reflect diverse industry experience (AdTech, retail, manufacturing, media)
 
 ## Changelog
 
