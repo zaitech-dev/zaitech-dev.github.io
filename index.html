@@ -33,9 +33,14 @@
     <meta name="twitter:description" content="We design, develop, and scale innovative technology solutions. Expert in e-commerce, payment processing, and mobile platforms." />
     <meta name="twitter:image" content="https://zaitech.dev/assets/favicon_io/android-chrome-512x512.png" />
     
-    <!-- Preconnect to external resources -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preload critical self-hosted fonts -->
+    <link rel="preload" href="/fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7W0Q5n-wU.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7W0Q5n-wU.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- Modulepreload for critical JS chunks - these will be dynamically updated by Vite -->
+    <link rel="modulepreload" href="/assets/js/react-vendor.js">
+    <link rel="modulepreload" href="/assets/js/home-page.js">
     
     <!-- Critical CSS - Inline for immediate rendering -->
     <style>
@@ -147,15 +152,19 @@
       }
     </style>
     
-    <!-- Defer non-critical CSS -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <!-- Self-hosted fonts -->
+    <link href="/fonts/inter-local.css" rel="stylesheet" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
     <noscript>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+      <link href="/fonts/inter-local.css" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     </noscript>
-    <script type="module" crossorigin src="/assets/js/index-Dx0SsjxT.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/css/index-BF2poejI.css">
+    <script type="module" crossorigin src="/assets/js/index-B8lzrHYU.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/js/vendor-DzQZEjXs.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/ui-vendor-Dc_FVRD7.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/react-vendor-CTJmEcbJ.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/utils-vendor--BulIq_u.js">
+    <link rel="stylesheet" crossorigin href="/assets/css/index-Cr5WKMYP.css">
   </head>
   <body>
     <div id="root"></div>
