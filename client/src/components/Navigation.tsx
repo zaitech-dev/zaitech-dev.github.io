@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { useLanguage } from '@/components/LanguageProvider';
-import logoWhite from '@assets/zaitech-logo-b-nobg_1750701875981.png';
 import { Button } from '@/components/ui/button';
 import { trackButtonClick } from '@/lib/analytics';
 
@@ -49,7 +48,11 @@ const Navigation: React.FC = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src={logoWhite} alt="Zaitech Development Logo" className="h-10 w-auto" />
+            <picture>
+              <source srcSet="/assets/logo-white.avif" type="image/avif" />
+              <source srcSet="/assets/logo-white.webp" type="image/webp" />
+              <img src="/assets/logo-white.webp" alt="Zaitech Development Logo" className="h-10 w-auto" />
+            </picture>
             <span className="text-xl font-bold text-white">Zaitech Development</span>
           </div>
           

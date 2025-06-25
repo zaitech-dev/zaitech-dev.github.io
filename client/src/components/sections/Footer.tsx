@@ -1,7 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail, Instagram, Rss } from 'lucide-react';
 import { useLanguage } from '@/components/LanguageProvider';
-import logoWhite from '@assets/zaitech-logo-b-nobg_1750701875981.png';
 import { trackExternalLink, trackContactInteraction } from '@/lib/analytics';
 
 const Footer: React.FC = () => {
@@ -12,7 +11,11 @@ const Footer: React.FC = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center space-x-3 rtl:space-x-reverse mb-4 md:mb-0">
-            <img src={logoWhite} alt="Zaitech Development Logo" className="h-8 w-auto" />
+            <picture>
+              <source srcSet="/assets/logo-white.avif" type="image/avif" />
+              <source srcSet="/assets/logo-white.webp" type="image/webp" />
+              <img src="/assets/logo-white.webp" alt="Zaitech Development Logo" className="h-8 w-auto" />
+            </picture>
             <span className="text-lg font-semibold">Zaitech Development</span>
           </div>
           

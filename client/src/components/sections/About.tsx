@@ -2,7 +2,6 @@ import React from 'react';
 import { User, TrendingUp, Users, Target } from 'lucide-react';
 import { useLanguage } from '@/components/LanguageProvider';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import logoWhite from '@assets/zaitech-logo-b-nobg_1750701875981.png';
 
 const About: React.FC = () => {
   const { t } = useLanguage();
@@ -55,11 +54,15 @@ const About: React.FC = () => {
               <p className="text-gray-300 leading-relaxed">{t('approachDescription')}</p>
             </div>
             <div className="flex justify-center">
-              <img 
-                src={logoWhite} 
-                alt="Zaitech Development Logo" 
-                className="h-48 w-auto opacity-90"
-              />
+              <picture>
+                <source srcSet="/assets/logo-white.avif" type="image/avif" />
+                <source srcSet="/assets/logo-white.webp" type="image/webp" />
+                <img 
+                  src="/assets/logo-white.webp" 
+                  alt="Zaitech Development Logo" 
+                  className="h-48 w-auto opacity-90"
+                />
+              </picture>
             </div>
         </div>
         </div>

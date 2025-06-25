@@ -1,6 +1,24 @@
 {
   "headers": [
     {
+      "source": "/",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</assets/header-background.avif>; rel=preload; as=image; type=image/avif, </assets/header-background.webp>; rel=preload; as=image; type=image/webp, </assets/logo-white.avif>; rel=preload; as=image; type=image/avif, </assets/logo-white.webp>; rel=preload; as=image; type=image/webp"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(.*\\.(avif|webp))",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
       "source": "/assets/(.*)",
       "headers": [
         {
@@ -10,7 +28,7 @@
       ]
     },
     {
-      "source": "/(.*\\.(css|js|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot))",
+      "source": "/(.*\\.(css|js|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot|avif|webp))",
       "headers": [
         {
           "key": "Cache-Control",

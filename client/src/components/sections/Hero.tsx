@@ -22,11 +22,14 @@ const Hero: React.FC = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-zai-primary">
-      {/* Background with atmospheric effect */}
+      {/* Background with atmospheric effect using modern image formats */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('/assets/header-background.jpg')`
+          backgroundImage: `image-set(
+            url('/assets/header-background.avif') type('image/avif'),
+            url('/assets/header-background.webp') type('image/webp')
+          )`
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-zai-primary/70 via-zai-primary/50 to-zai-primary/70" />
@@ -83,26 +86,6 @@ const Hero: React.FC = () => {
             onClick={() => trackExternalLink('https://zaitech.blog', 'Blog')}
           >
             <Rss size={32} />
-          </a>
-        </div>
-        
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button
-            size="lg"
-            onClick={() => {
-              trackButtonClick('learn_more', 'hero');
-              scrollToSection('about');
-            }}
-            className="bg-zai-accent hover:bg-zai-accent/80 text-white font-semibold px-8 py-3"
-          >
-            {t('learnMore')}
-          </Button>
-          <a
-            href="mailto:contact@zaitech.dev"
-            className="border border-white/30 text-white hover:bg-white/10 font-semibold px-8 py-3 rounded-lg transition-colors inline-block"
-            onClick={() => trackContactInteraction('email')}
-          >
-            {t('getInTouch')}
           </a>
         </div>
       </div>

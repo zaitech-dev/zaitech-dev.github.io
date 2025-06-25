@@ -1,25 +1,48 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/sections/Hero';
-import About from '@/components/sections/About';
-import Services from '@/components/sections/Services';
-import Work from '@/components/sections/Work';
-import Skills from '@/components/sections/Skills';
-import Footer from '@/components/sections/Footer';
-import AnalyticsTest from '@/components/AnalyticsTest';
+
+// Lazy load non-critical sections below the fold
+const About = lazy(() => import('@/components/sections/About'));
+const Services = lazy(() => import('@/components/sections/Services'));
+const Work = lazy(() => import('@/components/sections/Work'));
+const Skills = lazy(() => import('@/components/sections/Skills'));
+const Footer = lazy(() => import('@/components/sections/Footer'));
+const AnalyticsTest = lazy(() => import('@/components/AnalyticsTest'));
+
+// Loading component for lazy-loaded sections
+const SectionSkeleton = () => (
+  <div className="min-h-[400px] bg-zai-secondary animate-pulse flex items-center justify-center">
+    <div className="text-gray-400">Loading...</div>
+  </div>
+);
 
 const Home: React.FC = () => {
   return (
     <div className="min-h-screen bg-zai-primary text-white overflow-x-hidden">
       <Navigation />
       <Hero />
-      <About />
-      <Services />
-      <Work />
-      <Skills />
-      <Footer />
+      <Suspense fallback={<SectionSkeleton />}>
+        <About />
+      </Suspense>
+      <Suspense fallback={<SectionSkeleton />}>
+        <Services />
+      </Suspense>
+      <Suspense fallback={<SectionSkeleton />}>
+        <Work />
+      </Suspense>
+      <Suspense fallback={<SectionSkeleton />}>
+        <Skills />
+      </Suspense>
+      <Suspense fallback={<SectionSkeleton />}>
+        <Footer />
+      </Suspense>
       {/* Temporary analytics testing component - Remove after testing */}
-      {process.env.NODE_ENV === 'development' && <AnalyticsTest />}
+      {process.env.NODE_ENV === 'development' && (
+        <Suspense fallback={null}>
+          <AnalyticsTest />
+        </Suspense>
+      )}
     </div>
   );
 };
