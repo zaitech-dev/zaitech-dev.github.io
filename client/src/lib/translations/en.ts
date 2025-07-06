@@ -17,7 +17,7 @@ export const en = {
 
   // About Section
   aboutTitle: 'About Zaitech Development',
-  companyMission: 'Scaling Technology Solutions Globally',
+  companyMission: 'Driving Global Success with Scalable Technology Solutions',
   missionDescription: 'We design, develop, and scale innovative technology solutions that accelerate business growth and operational excellence.',
   aboutDescription: 'At Zaitech Development, we build comprehensive technology ecosystems that simplify complex business operations into streamlined, intelligent platforms. Our solutions empower MVPDs, broadcasters, retail chains, and manufacturing industries through automated workflows, real-time analytics, and cross-platform integration, significantly enhancing operational efficiency and revenue growth.',
   ourApproach: 'Our Approach',
