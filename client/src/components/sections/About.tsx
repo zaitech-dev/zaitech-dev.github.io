@@ -1,7 +1,8 @@
 import React from 'react';
-import { User, TrendingUp, Users, Target } from 'lucide-react';
+import { User, TrendingUp, Users, Target, ExternalLink } from 'lucide-react';
 import { useLanguage } from '@/components/LanguageProvider';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { trackExternalLink } from '@/lib/analytics';
 import logoWhite from '@assets/zaitech-logo-b-nobg_1750701875981.png';
 
 const About: React.FC = () => {
@@ -52,7 +53,20 @@ const About: React.FC = () => {
             <div>
               <h3 className="text-2xl font-bold mb-6 text-zai-accent">{t('ourApproach')}</h3>
               <p className="text-gray-300 leading-relaxed mb-6">{t('aboutDescription')}</p>
-              <p className="text-gray-300 leading-relaxed">{t('approachDescription')}</p>
+              <p className="text-gray-300 leading-relaxed mb-6">{t('approachDescription')}</p>
+              <div className="flex items-center space-x-2 rtl:space-x-reverse">
+                <span className="text-gray-400">{t('founderNote')}</span>
+                <a 
+                  href="https://zaitera.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-zai-accent hover:text-zai-accent/80 transition-colors inline-flex items-center space-x-1 rtl:space-x-reverse"
+                  onClick={() => trackExternalLink('https://zaitera.com', 'Founder Website')}
+                >
+                  <span>{t('founderLink')}</span>
+                  <ExternalLink size={14} />
+                </a>
+              </div>
             </div>
             <div className="flex justify-center">
               <img 

@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { translations, Language, TranslationKey } from '@/lib/translations';
+import { getLanguageFromUrl, updateUrlWithLanguage } from '@/lib/languageUtils';
 
 interface LanguageContextType {
   language: Language;
@@ -21,13 +22,30 @@ export const useLanguage = () => {
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [language, setLanguage] = useState<Language>('en');
 
-  // Temporarily lock language to English
   const handleSetLanguage = (lang: Language) => {
-    // For now, only allow English
-    if (lang === 'en') {
-      setLanguage(lang);
-    }
+    setLanguage(lang);
+    localStorage.setItem('preferred-language', lang);
+    updateUrlWithLanguage(lang);
   };
+
+  // Load language from URL, then localStorage, then default to 'en'
+  useEffect(() => {
+    const urlLang = getLanguageFromUrl();
+    
+    if (urlLang) {
+      setLanguage(urlLang);
+      localStorage.setItem('preferred-language', urlLang);
+    } else {
+      const savedLanguage = localStorage.getItem('preferred-language') as Language;
+      if (savedLanguage && (savedLanguage === 'en' || savedLanguage === 'ar')) {
+        setLanguage(savedLanguage);
+        updateUrlWithLanguage(savedLanguage);
+      } else {
+        // Default to English and add to URL
+        updateUrlWithLanguage('en');
+      }
+    }
+  }, []);
 
   const t = (key: TranslationKey): string => {
     return translations[language][key] || translations.en[key];

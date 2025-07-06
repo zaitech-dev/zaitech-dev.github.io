@@ -3,9 +3,10 @@ import { TrendingUp, Users, Settings, BookOpen } from 'lucide-react';
 import { useLanguage } from '@/components/LanguageProvider';
 import { useScrollAnimationWithTracking } from '@/hooks/useScrollAnimationWithTracking';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { translations } from '@/lib/translations';
 
 const Services: React.FC = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const { elementRef: titleRef, isVisible: titleVisible } = useScrollAnimationWithTracking('services');
 
   const services = [
@@ -13,28 +14,28 @@ const Services: React.FC = () => {
       icon: Settings,
       title: t('platformDevelopmentTitle'),
       description: t('platformDevelopmentDesc'),
-      features: ['E-commerce Platforms', 'Payment Systems', 'Mobile Applications', 'API Development'],
+      features: translations[language].platformDevelopmentFeatures,
       color: 'from-blue-500 to-purple-600'
     },
     {
       icon: TrendingUp,
       title: t('systemScalingTitle'),
       description: t('systemScalingDesc'),
-      features: ['Infrastructure Scaling', 'Performance Optimization', 'Multi-Country Deployment', 'DevOps Solutions'],
+      features: translations[language].systemScalingFeatures,
       color: 'from-green-500 to-teal-600'
     },
     {
       icon: Users,
       title: t('consultancyTitle'),
       description: t('consultancyDesc'),
-      features: ['Technology Strategy', 'Architecture Design', 'Digital Transformation', 'Team Leadership'],
+      features: translations[language].consultancyFeatures,
       color: 'from-orange-500 to-red-600'
     },
     {
       icon: BookOpen,
       title: t('trainingTitle'),
       description: t('trainingDesc'),
-      features: ['Enterprise Architecture', 'Advanced Programming', 'Team Leadership', 'Cloud-Native Development'],
+      features: translations[language].trainingFeatures,
       color: 'from-purple-500 to-pink-600'
     }
   ];

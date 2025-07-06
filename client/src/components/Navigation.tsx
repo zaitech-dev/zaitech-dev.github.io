@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { useLanguage } from '@/components/LanguageProvider';
+import LanguageToggle from '@/components/LanguageToggle';
 import logoWhite from '@assets/zaitech-logo-b-nobg_1750701875981.png';
 import { Button } from '@/components/ui/button';
 import { trackButtonClick } from '@/lib/analytics';
@@ -64,15 +65,19 @@ const Navigation: React.FC = () => {
                 {t(item.key as any)}
               </button>
             ))}
+            <LanguageToggle />
           </div>
           
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden text-white"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          <div className="md:hidden flex items-center space-x-3 rtl:space-x-reverse">
+            <LanguageToggle />
+            <button
+              className="text-white"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
         
         {/* Mobile Navigation */}

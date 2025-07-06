@@ -10,7 +10,7 @@ export const en = {
 
   // Hero Section
   heroTitle: 'Zaitech Development',
-  heroSubtitle: 'Leading Software Engineering Projects',
+  heroSubtitle: 'Leaders of Software Engineering Projects',
   heroDescription: 'We build Web, Mobile, and Embedded Systems',
   learnMore: 'Learn More',
   getInTouch: 'Get In Touch',
@@ -33,9 +33,6 @@ export const en = {
   globalReachDesc: 'Multi-country platforms deployed in 4+ markets',
   teamExpertise: 'Team Excellence',
   teamExpertiseDesc: 'Specialized teams delivering enterprise-level solutions',
-  contactDetails: 'Contact Details',
-  location: 'Global Operations – Netherlands & Brazil',
-  contactEmail: 'contact@zaitech.dev',
 
   // Services Section
   servicesTitle: 'Our Services',
@@ -49,13 +46,21 @@ export const en = {
   trainingTitle: 'Technical Training & Development',
   trainingDesc: 'Comprehensive training programs covering enterprise architecture, modern programming languages, cloud-native development, team leadership, and agile methodologies.',
 
-  // Work Section
-  workTitle: 'Our Projects',
-  ongoing: 'Active',
-  completed: 'Delivered',
+  // Service Features
+  platformDevelopmentFeatures: ['E-commerce Platforms', 'Payment Systems', 'Mobile Applications'],
+  systemScalingFeatures: ['Infrastructure Scaling', 'Performance Optimization', 'Multi-Country Deployment', 'DevOps Solutions'],
+  consultancyFeatures: ['Technology Strategy', 'Architecture Design', 'Digital Transformation', 'Team Leadership'],
+  trainingFeatures: ['Enterprise Architecture', 'Advanced Programming', 'Team Leadership', 'Cloud-Native Development'],
+
+  // Status labels
+  ongoing: 'Ongoing',
+  completed: 'Completed',
+
+  // Portfolio Section
+  portfolioTitle: 'Our Projects',
 
   // Work Projects List
-  workProjects: [
+  portfolioProjects: [
     {
       client: 'Leading AdTech Platform',
       title: 'Advanced Campaign Management Platform',
@@ -112,38 +117,6 @@ export const en = {
     }
   ],
 
-  // Portfolio Section
-  portfolioTitle: 'Portfolio',
-  viewProject: 'View Project',
-
-  // Portfolio Projects List
-  portfolioProjects: [
-    {
-      title: 'Multi-Country E-commerce Platform',
-      description: 'Led the expansion of a Dutch retailer\'s platform to Belgium, implementing multi-lingual support and different tax systems. Platform processes hundreds of thousands of orders monthly.',
-      metrics: ['500K+ Orders', '€50M+ Revenue'],
-      technologies: ['Golang', 'GCP', 'Microservices'],
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400',
-      link: '#'
-    },
-    {
-      title: 'Mobile POS Platform Scaling',
-      description: 'Scaled Android-based point-of-sale system from 10 to 230,000+ active devices, implementing CI/CD pipelines and monitoring systems for optimal performance.',
-      metrics: ['230K+ Devices', '2300% Growth'],
-      technologies: ['Kotlin', 'Android', 'CI/CD'],
-      image: 'https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400',
-      link: '#'
-    },
-    {
-      title: 'ML Position Detection System',
-      description: 'Developed production-grade machine learning backend service that reduced position-detection system response time by 75%, replacing legacy .NET infrastructure.',
-      metrics: ['75% Faster', 'Production ML'],
-      technologies: ['Python', 'ML', 'Flask'],
-      image: 'https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400',
-      link: '#'
-    }
-  ],
-
   // Skills Section
   skillsTitle: 'Technology Stack',
   skillsDescription: 'Cutting-edge technologies powering our scalable solutions.',
@@ -171,21 +144,6 @@ export const en = {
       skills: ['PostgreSQL', 'MongoDB', 'Redis', 'BigQuery', 'Elasticsearch', 'Analytics']
     }
   ],
-
-  // Contact Section
-  contactTitle: 'Get In Touch',
-  contactDescription: 'Reach out to discover how we can drive technological innovation for your business.',
-  name: 'Name',
-  emailField: 'Email',
-  subject: 'Subject',
-  message: 'Message',
-  sendMessage: 'Send Message',
-  namePlaceholder: 'Your name',
-  emailPlaceholder: 'your@email.com',
-  subjectPlaceholder: 'Project inquiry',
-  messagePlaceholder: 'Tell us about your project...',
-  messageSent: 'Your message has been sent. Thank you!',
-  messageError: 'An error occurred. Please try again.',
 
   // Footer
   companyName: 'Zaitech Development',
