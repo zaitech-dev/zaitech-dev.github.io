@@ -10,18 +10,17 @@ export const en = {
 
   // Hero Section
   heroTitle: 'Zaitech Development',
-  heroSubtitle: 'Leaders of Software Engineering Projects',
-  heroDescription: 'We build Web, Mobile, and Embedded Systems',
+  heroSubtitle: 'Technology That Solves Real Business Problems',
+  heroDescription: 'We use technology and AI to solve real business headaches without jargon or limits. Whatever problem you\'re facing, we build practical, adaptable platforms that work.',
   learnMore: 'Learn More',
   getInTouch: 'Get In Touch',
 
   // About Section
   aboutTitle: 'About Zaitech Development',
-  companyMission: 'Driving Global Success with Scalable Technology Solutions',
-  missionDescription: 'We design, develop, and scale innovative technology solutions that accelerate business growth and operational excellence.',
-  aboutDescription: 'At Zaitech Development, we build comprehensive technology ecosystems that simplify complex business operations into streamlined, intelligent platforms. Our solutions empower MVPDs, broadcasters, retail chains, and manufacturing industries through automated workflows, real-time analytics, and cross-platform integration, significantly enhancing operational efficiency and revenue growth.',
+  companyMission: 'Replace Headaches with Clarity, Scale with Confidence',
+  missionDescription: 'We use technology and AI to solve real business problems, whatever they may be. No buzzwords, no limits, just practical solutions that work.',
   ourApproach: 'Our Approach',
-  approachDescription: 'We develop unified platforms that seamlessly integrate operations across international markets. Our solutions leverage automation and predictive analytics to revolutionize campaign management, pricing intelligence, and enterprise operations, generating measurable impact with platforms managing revenues in the hundreds of millions.',
+  approachDescription: 'We simplify operations, automate workflows, reveal hidden insights, and help you make smarter decisions. Our platforms adapt to your needs and grow with your business, delivering technology that works for your challenges today and beyond.',
   founderNote: 'Founded by Abdullah Zaiter',
   founderLink: 'Learn more about our founder',
   keyAchievements: 'Key Achievements',
@@ -47,7 +46,7 @@ export const en = {
   trainingDesc: 'Comprehensive training programs covering enterprise architecture, modern programming languages, cloud-native development, team leadership, and agile methodologies.',
 
   // Service Features
-  platformDevelopmentFeatures: ['E-commerce Platforms', 'Payment Systems', 'Mobile Applications'],
+  platformDevelopmentFeatures: ['E-commerce Platforms', 'Payment Systems', 'Web & Mobile Applications'],
   systemScalingFeatures: ['Infrastructure Scaling', 'Performance Optimization', 'Multi-Country Deployment', 'DevOps Solutions'],
   consultancyFeatures: ['Technology Strategy', 'Architecture Design', 'Digital Transformation', 'Team Leadership'],
   trainingFeatures: ['Enterprise Architecture', 'Advanced Programming', 'Team Leadership', 'Cloud-Native Development'],
@@ -76,7 +75,7 @@ export const en = {
       location: 'United States',
       period: '2024 – Present',
       status: 'ongoing',
-      description: 'Developing an automated pricing system for a major electronics retailer that aggregates real-time wholesale prices from multiple bulk buyers and sellers. The system uses machine learning algorithms to analyze market trends, competitor pricing, and demand patterns to recommend optimal pricing strategies, resulting in improved profit margins and market competitiveness.',
+      description: 'Developing an automated pricing system for a major electronics retailer that aggregates real-time wholesale prices from multiple bulk buyers and sellers. The system uses smart algorithms to analyze market trends, competitor pricing, and demand patterns to recommend optimal pricing strategies, resulting in improved profit margins and market competitiveness.',
       technologies: ['Machine Learning', 'Pricing Automation', 'Market Analysis', 'API Integration', 'Real-time Data Processing']
     },
     {

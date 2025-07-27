@@ -52,7 +52,6 @@ const About: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl font-bold mb-6 text-zai-accent">{t('ourApproach')}</h3>
-              <p className="text-gray-300 leading-relaxed mb-6">{t('aboutDescription')}</p>
               <p className="text-gray-300 leading-relaxed mb-6">{t('approachDescription')}</p>
               <div className="flex items-center space-x-2 rtl:space-x-reverse">
                 <span className="text-gray-400">{t('founderNote')}</span>
