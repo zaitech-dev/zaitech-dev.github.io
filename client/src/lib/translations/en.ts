@@ -9,14 +9,14 @@ export const en = {
   skills: 'Technology',
 
   // Hero Section
-  heroTitle: 'Zaitech Development',
+  heroTitle: 'Zaitech',
   heroSubtitle: 'Technology That Solves Real Business Problems',
-  heroDescription: 'We use technology and AI to solve real business headaches without jargon or limits. Whatever problem you\'re facing, we build practical, adaptable platforms that work.',
+  heroDescription: 'We use technology and AI to solve real business headaches without limits. Whatever problem you\'re facing, we build practical, adaptable platforms that work.',
   learnMore: 'Learn More',
   getInTouch: 'Get In Touch',
 
   // About Section
-  aboutTitle: 'About Zaitech Development',
+  aboutTitle: 'About Zaitech',
   companyMission: 'Replace Headaches with Clarity, Scale with Confidence',
   missionDescription: 'We use technology and AI to solve real business problems, whatever they may be. No buzzwords, no limits, just practical solutions that work.',
   ourApproach: 'Our Approach',
@@ -26,7 +26,7 @@ export const en = {
   keyAchievements: 'Key Achievements',
   revenueImpact: 'Revenue Growth',
   revenueImpactDesc: 'Platforms driving tens of millions in revenue',
-  systemScaling: 'System Scaling',
+  systemScaling: 'Systems Scaling',
   systemScalingAchievementDesc: 'Infrastructure scaled from 10 to over 230K active devices',
   globalReach: 'Global Reach',
   globalReachDesc: 'Multi-country platforms deployed in 4+ markets',
@@ -48,7 +48,7 @@ export const en = {
   // Service Features
   platformDevelopmentFeatures: ['E-commerce Platforms', 'Payment Systems', 'Web & Mobile Applications'],
   systemScalingFeatures: ['Infrastructure Scaling', 'Performance Optimization', 'Multi-Country Deployment', 'DevOps Solutions'],
-  consultancyFeatures: ['Technology Strategy', 'Architecture Design', 'Digital Transformation', 'Team Leadership'],
+  consultancyFeatures: ['Technology Strategy', 'Architecture Design', 'Digital Transformation', 'Teams Leadership'],
   trainingFeatures: ['Enterprise Architecture', 'Advanced Programming', 'Team Leadership', 'Cloud-Native Development'],
 
   // Status labels
@@ -95,24 +95,6 @@ export const en = {
       status: 'completed',
       description: 'Leading the development and expansion of a major e-commerce platform that processes hundreds of thousands of orders, generating tens of millions in revenue. Successfully expanded operations from Netherlands to Belgium, implementing multi-lingual and multi-currency capabilities.',
       technologies: ['E-Commerce', 'Golang', 'GCP', 'International Expansion', 'Microservices']
-    },
-    {
-      client: 'Semiconductor Industry',
-      title: 'Manufacturing Optimization System',
-      location: 'Netherlands',
-      period: '2021 – 2022',
-      status: 'completed',
-      description: 'Optimized critical manufacturing processes, reducing machine preparation time by 8 hours through advanced calibration automation. Implemented data-driven approaches that significantly improved production efficiency and reduced operational costs.',
-      technologies: ['Python', 'C++', 'Process Optimization', 'Manufacturing Systems', 'Data Analysis']
-    },
-    {
-      client: 'FinTech Payment Provider',
-      title: 'Payment Infrastructure Scaling',
-      location: 'Brazil',
-      period: '2019 – 2021',
-      status: 'completed',
-      description: 'Scaled payment infrastructure from supporting fewer than 10 devices to over 230,000 active devices. Architected and implemented robust Android-based point-of-sale systems, CI/CD pipelines, and comprehensive monitoring solutions.',
-      technologies: ['Kotlin', 'Android', 'Payment Systems', 'Infrastructure Scaling', 'DevOps']
     }
   ],
 
