@@ -82,8 +82,8 @@ export const en = {
       client: 'PenguinIN',
       title: 'Machine Learning Service Optimization',
       location: 'United States',
-      period: '2023 – Present',
-      status: 'ongoing',
+      period: '2023 – 2025',
+      status: 'completed',
       description: 'Developed a production-grade machine learning backend for real-time position detection, optimizing response times and modernizing legacy systems. Built scalable infrastructure that is able to processes thousands of positioning requests per second, enhancing user experience in indoor navigation applications.',
       technologies: ['Python', 'Flask', 'Machine Learning', 'CI/CD', 'DevOps', 'Real-time Processing']
     },
