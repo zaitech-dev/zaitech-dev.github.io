@@ -4,9 +4,7 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { LanguageProvider } from "@/components/LanguageProvider";
-import { initGA } from "@/lib/analytics";
 import { useScrollDepthTracking } from "@/hooks/useScrollDepthTracking";
-import { useEffect } from "react";
 import Home from "@/pages/home";
 
 function Router() {
@@ -19,11 +17,6 @@ function Router() {
 }
 
 function App() {
-  useEffect(() => {
-    // Initialize Google Analytics
-    initGA();
-  }, []);
-
   // Track scroll depth for engagement metrics
   useScrollDepthTracking();
 

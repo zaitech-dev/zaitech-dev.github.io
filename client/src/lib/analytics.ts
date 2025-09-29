@@ -10,39 +10,7 @@ declare global {
   }
 }
 
-export const GA_MEASUREMENT_ID = 'G-J92HLCLMDD';
-
-// Initialize Google Analytics
-export const initGA = () => {
-  // Load gtag script
-  const script1 = document.createElement('script');
-  script1.async = true;
-  script1.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
-  document.head.appendChild(script1);
-
-  // Initialize dataLayer and gtag
-  window.dataLayer = window.dataLayer || [];
-  window.gtag = function gtag() {
-    window.dataLayer.push(arguments);
-  };
-  
-  window.gtag('js', new Date());
-  window.gtag('config', GA_MEASUREMENT_ID, {
-    page_title: document.title,
-    page_location: window.location.href,
-  });
-
-  // Debug logging (remove in production)
-  if (process.env.NODE_ENV === 'development') {
-    console.log('🔍 Google Analytics initialized with ID:', GA_MEASUREMENT_ID);
-    script1.onload = () => {
-      console.log('✅ Google Analytics script loaded successfully');
-    };
-    script1.onerror = () => {
-      console.error('❌ Failed to load Google Analytics script');
-    };
-  }
-};
+export const GA_MEASUREMENT_ID = 'G-LBTNWJN6TG';
 
 // Track page views
 export const trackPageView = (url: string, title?: string) => {
